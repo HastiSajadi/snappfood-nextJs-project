@@ -1,0 +1,52 @@
+{
+    "hotdog":[
+        {
+            "id": "mexican",
+            "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8e4daba.jpg",
+            "name": "ساندویچ هات داگ مکزیکن",
+            "rate":"4.4",
+            "des": "هات داگ گوشت تازه 85%، کاهو، خیارشور، سس هالوپینو، سس مخصوص",
+            "price": "136,000"
+        },
+        {
+            "id": "classic",
+            "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8dae26b.jpg",
+            "name": "ساندویچ هات داگ مکزیکن",
+            "rate":"4.5",
+            "des": "هات داگ گوشت 70%، گوجه فرنگی، خیارشور، سس خردل، سبزیجات معطر",
+            "price": "126,000"
+        },
+        {
+            "id": "merguez",
+            "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8f04a0b.jpg",
+            "name": "ساندویچ هات داگ مرگز با قارچ و پنیر",
+            "rate":"4.4",
+            "des": "هات داگ گوشت تازه 90%، قارچ، پنیر موزارلا، پوره سیب زمینی، پیاز جعفری",
+            "price": "154,000"
+        },
+        {
+            "id": "gouda",
+            "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8dae26b.jpg",
+            "name": "ساندویچ هات داگ با پنیر گودا",
+            "rate":"4.6",
+            "des": "هات داگ مرغ، پنیر گودا، سس قارچ، سس خردل، خیارشور، گوجه فرنگی، سبزیجات معطر",
+            "price": "132,000"
+        },
+        {
+            "id": "roast",
+            "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8f5b5d5.jpg",
+            "name": "ساندویچ هات داگ رست بیف",
+            "rate":"4.4",
+            "des": "هات داگ گوشت تازه 85%، رست بیف، سس خامه، کاهو",
+            "price": "172,000"
+        },
+        {
+            "id": "beaf",
+            "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8f35dd4.jpg",
+            "name": "ساندویچ بیف هات داگ",
+            "rate":"4.7",
+            "des": "هات داگ گوشت تازه ۹۰%، سس آلفردو، پیاز جعفری، پوره سیب زمینی",
+            "price": "158,000"
+        }
+    ]
+}
