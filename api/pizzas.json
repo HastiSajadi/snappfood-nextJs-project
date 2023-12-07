@@ -1,0 +1,52 @@
+{
+   "pizzas":[
+        {
+            "id": "hot chicken",
+            "img": "https://drive.google.com/file/d/1v93xiVKuFc09-1f4UQ8UuFY7xIuX0Gw7",
+            "name": "پیتزا هات چیکن",
+            "rate":"4.8",
+            "des": "سینه مرغ گریل، قارچ، فلفل هالوپینو، سس تند، پنیر موزارلا، شوید، سیب زمینی سرخ شده",
+            "price": "268,000"
+        },
+        {
+            "id": "meat and mushroom",
+            "img": "https://drive.google.com/file/d/1INik-ZbX5jpgOEYiJO-mHLiS9KThDp7y",
+            "name": "پیتزا گوشت و قارچ",
+            "rate":"4.6",
+            "des": "گوشت چرخ شده طعم دار شده، قارچ، فلفل دلمه ای، پیاز، پنیر موزارلا، سس مخصوص، سیب زمینی سرخ شده",
+            "price": "280,000"
+        },
+        {
+            "id": "pepperoni",
+            "img": "https://drive.google.com/file/d/1fYka-u0VzHPThJtkv6VYspgyQXIZT1AO",
+            "name": "پیتزا پپرونی",
+            "rate":"4.7",
+            "des": "کالباس پپرونی، قارچ، فلفل هالوپینو، پنیر موزارلا، سیب زمینی سرخ شده",
+            "price": "252,000"
+        },
+        {
+            "id": "vegetable",
+            "img": "https://drive.google.com/file/d/1jzxFd8HgP8zMBP9nCFguhe8oVJclJ3ki",
+            "name": "پیتزا سبزیجات",
+            "rate":"4.6",
+            "des": "زیتون، قارچ، گوجه فرنگی، فلفل دلمه ای، پیاز سرخ شده، پنیر موزارلا، سس مخصوص، سیب زمینی سرخ شده",
+            "price": "198,000"
+        },
+        {
+            "id": "pepperoni prim",
+            "img": "https://drive.google.com/file/d/187FFABe7D7nvdI3_oBxoDzgMUFYNdqEc",
+            "name": "پیتزا پپرونی پرایم",
+            "rate":"4.4",
+            "des": "خمیر پیتزا ایتالیایی ۳۲ سانتی متری، کالباس پپرونی ۸۰درصد، قارچ، سس خامه، فلفل چیلی، فلفل هالوپینو، پنیر پارمسان، پنیر موزارلا",
+            "price": "224,000"
+        },
+        {
+            "id": "chicken lovers",
+            "img": "https://drive.google.com/file/d/1J6xSDYa7boOvoJzzBvHxzDP3BgcbX4tY",
+            "name": "پیتزا چیکن لاورز",
+            "rate":"4.1",
+            "des": "خمیر پیتزا ایتالیایی ۳۲ سانتی متری، ۱۲۰ گرم مرغ طعم دار، گوجه خشک ، قارچ، فلفل دلمه رنگی، سس سیر سبزیجات، پنیر پارمسان ، پنیر موزارلا",
+            "price": "238,000"
+        }
+    ]
+}
