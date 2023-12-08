@@ -1,7 +1,7 @@
 {
     "fries":[
         {
-            "id": "normal",
+            "id": "1",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118fcc16e01.jpg",
             "name": "سیب زمینی سرخ شده",
             "rate":"4.7",
@@ -9,7 +9,7 @@
             "price": "74,000"
         },
         {
-            "id": "Sausage",
+            "id": "2",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118fcc43f76.jpg",
             "name": "هات داگ چیز فرایز",
             "rate":"4.5",
@@ -17,7 +17,7 @@
             "price": "158,000"
         }, 
         {
-            "id": "alfredo",
+            "id": "3",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118fcc7db63.jpg",
             "name": "آلفردو چیز فرایز",
             "rate":"4.7",

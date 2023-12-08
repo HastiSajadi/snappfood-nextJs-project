@@ -1,7 +1,7 @@
 {
     "hotdog":[
         {
-            "id": "mexican",
+            "id": "1",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8e4daba.jpg",
             "name": "ساندویچ هات داگ مکزیکن",
             "rate":"4.4",
@@ -9,7 +9,7 @@
             "price": "136,000"
         },
         {
-            "id": "classic",
+            "id": "2",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8dae26b.jpg",
             "name": "ساندویچ هات داگ مکزیکن",
             "rate":"4.5",
@@ -17,7 +17,7 @@
             "price": "126,000"
         }, 
         {
-            "id": "merguez",
+            "id": "3",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8f04a0b.jpg",
             "name": "ساندویچ هات داگ مرگز با قارچ و پنیر",
             "rate":"4.4",
@@ -25,7 +25,7 @@
             "price": "154,000"
         },
         {
-            "id": "gouda",
+            "id": "4",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8dae26b.jpg",
             "name": "ساندویچ هات داگ با پنیر گودا",
             "rate":"4.6",
@@ -33,7 +33,7 @@
             "price": "132,000"
         },
         {
-            "id": "roast",
+            "id": "5",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8f5b5d5.jpg",
             "name": "ساندویچ هات داگ رست بیف",
             "rate":"4.4",
@@ -41,7 +41,7 @@
             "price": "172,000"
         },
         {
-            "id": "beaf",
+            "id": "6",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8f35dd4.jpg",
             "name": "ساندویچ بیف هات داگ",
             "rate":"4.7",

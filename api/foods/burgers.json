@@ -2,7 +2,7 @@
     "burgers":[
         {
           
-            "id": "mushroom",
+            "id": "1",
             "img": "https://cdn.snappfood.ir/641x641/cdn/23/50/35/vendor/648c6ba2bfbae.jpeg",
             "name": "ساندویچ ماشروم چیکن گریل",
             "rate":"4",
@@ -10,7 +10,7 @@
             "price": "158,000"
         },
         {
-            "id": "mega",
+            "id": "2",
             "img": "https://cdn.snappfood.ir/641x641/cdn/23/50/35/vendor/63d81700c5f44.jpeg",
             "name": "ساندویچ مگا زینگر اسپایسی",
             "rate":"4.9",
@@ -18,7 +18,7 @@
             "price": "244,000"
         }, 
         {
-            "id": "josi",
+            "id": "3",
             "img": "https://cdn.snappfood.ir/641x641/cdn/29/95/91/vendor/64579c611cd8c.jpeg",
             "name": "سینگل جوسی برگر",
             "rate":"4",
@@ -26,7 +26,7 @@
             "price": "200,000"
         },
         {
-            "id": "cheese",
+            "id": "4",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118888bc5b2.jpg",
             "name": "چیز برگر",
             "rate":"4.6",
@@ -34,7 +34,7 @@
             "price": "200,000"
         },
         {
-            "id": "fresh",
+            "id": "5",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/6511888944b9e.jpg",
             "name": "فرش ماشروم برگر",
             "rate":"4.7",

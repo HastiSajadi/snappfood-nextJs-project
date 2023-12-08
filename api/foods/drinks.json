@@ -1,7 +1,7 @@
 {
     "drinks":[
         {
-            "id": "pepsi",
+            "id": "1",
             "img": "https://cdn.snappfood.ir/641x641/cdn/32/64/13/product_image/zoodfood/65586bc7ee724.jpg",
             "name": "نوشابه قوطی پپسی",
             "rate":"4",
@@ -9,7 +9,7 @@
             "price": "16,400"
         },
         {
-            "id": "mirina",
+            "id": "2",
             "img": "https://cdn.snappfood.ir/641x641/cdn/32/64/13/product_image/zoodfood/65586bcc64839.jpg",
             "name": "نوشابه قوطی میرندا",
             "rate":"4",
@@ -17,7 +17,7 @@
             "price": "16,400"
         },
         { 
-            "id": "sevenup",
+            "id": "3",
             "img": "https://cdn.snappfood.ir/641x641/cdn/32/64/13/product_image/zoodfood/65586bd15516e.jpg",
             "name": "نوشابه قوطی سون آپ",
             "rate":"4",
@@ -25,7 +25,7 @@
             "price": "16,400"
         },
         {
-            "id": "water",
+            "id": "4",
             "img": "https://cdn.snappfood.ir/641x641/cdn/32/64/13/product_image/zoodfood/65586be8d85d4.jpg",
             "name": "آب معدنی کوچک",
             "rate":"4",
@@ -33,7 +33,7 @@
             "price": "4,600"
         },
         {
-            "id": "doogh",
+            "id": "5",
             "img": "https://cdn.snappfood.ir/641x641/cdn/32/64/13/product_image/zoodfood/65586be3b95cb.jpg",
             "name": "دوغ لیوانی",
             "rate":"5",
