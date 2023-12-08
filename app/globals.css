@@ -135,3 +135,11 @@
   --sf-shadows-modal: 0px 2px 8px rgba(0,0,0,0.08),0px 8px 32px rgba(0,0,0,0.16);
   --sf-shadows-none: none;
 };
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
