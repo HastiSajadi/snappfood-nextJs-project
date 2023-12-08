@@ -1,14 +1,11 @@
 import style from "./css/category.module.css"
 import clsx from "clsx";
 import Api from "../../../api/categories/categories.json"
-// import getCategories from "@/requests/getCategories";
+
 
 
 
 export default  function Category(){
-
-    // const categ = await getCategories();
-    
     return(
         <>
          <div className={clsx("container-fluid py-1 border-bottom px-2 d-flex flex-row-reverse justify-content-between flex-nowrap" , style.categoryContainer)}>
