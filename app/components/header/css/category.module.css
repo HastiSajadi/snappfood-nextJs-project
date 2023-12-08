@@ -1,0 +1,12 @@
+.categoryItems{
+    background-color: gray;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categoryItemsImg{
+    width: 40px;
+}

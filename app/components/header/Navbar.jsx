@@ -1,7 +1,7 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faUser ,faMagnifyingGlass,faLocationCrosshairs,faChevronDown,faStore} from "@fortawesome/free-solid-svg-icons"
-import style from "./header.module.css"
+import style from "./css/navbar.module.css"
 import clsx from "clsx"
 import MediaQuery from 'react-responsive'
 
@@ -12,14 +12,14 @@ export default function Navbar(){
             {/* //desktop features */}
             <MediaQuery minWidth={1024}>
             <div>
-                <button className={clsx("btn p-2 me-3 text-white fw-bold" , style.btnPink)} >
+                <a className={clsx("btn p-2 me-3 text-white fw-bold" , style.btnPink)} >
                         ورود یا عضویت
-                </button>
+                </a>
 
-                <button className={clsx("btn p-2 link-dark")}>
+                <a className={clsx("btn p-2 link-dark")}>
                         ثبت نام فروشندگان
                         <FontAwesomeIcon className={clsx(style.icons ,"ms-2")} icon={faStore} />
-                </button>
+                </a>
             </div>
             <form className={clsx(style.inputContainer)}>
                 <input type="search" className={clsx( style.searchInput)} placeholder="جست و جو در اسنپ فود" aria-label="Search" aria-describedby="search-addon" />
