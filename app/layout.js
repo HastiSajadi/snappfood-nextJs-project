@@ -1,8 +1,7 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
 import Header from './components/header/Header'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export const metadata = {
   title: 'اسنپ فود | سفارش آنلاین غذا از تمامی رستوران‌ ها و فست فودها',
@@ -11,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html>
       <body className={inter.className}>
         <Header/>
         {children}
