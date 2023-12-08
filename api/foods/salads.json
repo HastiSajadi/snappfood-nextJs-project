@@ -1,7 +1,7 @@
 {
     "salads":[
         {
-            "id": "grill",
+            "id": "1",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118fcc16e01.jpg",
             "name":"سالاد سزار مرغ گریل",
             "rate":"3.6",
@@ -9,7 +9,7 @@
             "price": "210,000"
         },
         {
-            "id": "fillet",
+            "id": "2",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118fcc16e01.jpg",
             "name":"سالاد سزار با فیله سوخاری",
             "rate":"3.3",

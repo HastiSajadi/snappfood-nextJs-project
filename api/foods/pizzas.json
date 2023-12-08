@@ -1,7 +1,7 @@
 {
    "pizzas":[
         {
-            "id": "hotChicken",
+            "id": "1",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/6511852967ae9.jpg",
             "name": "پیتزا هات چیکن",
             "rate":"4.8",
@@ -9,7 +9,7 @@
             "price": "268,000"
         },
         {
-            "id": "meat",
+            "id": "2",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/651185299d65a.jpg",
             "name": "پیتزا گوشت و قارچ",
             "rate":"4.6",
@@ -17,7 +17,7 @@
             "price": "280,000"
         },
         {
-            "id": "pepperoni",
+            "id": "3",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/6511852861dd1.jpg",
             "name": "پیتزا پپرونی",
             "rate":"4.7",
@@ -25,7 +25,7 @@
             "price": "252,000"
         },
         {
-            "id": "vegetable",
+            "id": "4",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/6511852ac3393.jpg",
             "name": "پیتزا سبزیجات",
             "rate":"4.6",
@@ -33,7 +33,7 @@
             "price": "198,000"
         }, 
         {
-            "id": "pepperoniPrim",
+            "id": "5",
             "img": "https://cdn.snappfood.ir/641x641/cdn/23/50/35/vendor/63d81509ae8fc.jpeg",
             "name": "پیتزا پپرونی پرایم",
             "rate":"4.4",
@@ -41,7 +41,7 @@
             "price": "224,000"
         },
         {
-            "id": "chicken",
+            "id": "6",
             "img": "https://cdn.snappfood.ir/641x641/cdn/23/50/35/vendor/63d8154dcad61.jpeg",
             "name": "پیتزا چیکن لاورز",
             "rate":"4.1",
