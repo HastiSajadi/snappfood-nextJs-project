@@ -1,5 +1,5 @@
 [
-    {  
+        {  
             "id": 1,
             "icon": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png",
             "title": "رستوران"
@@ -43,11 +43,5 @@
             "id": 8,
             "icon": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_7_60350883d6e43_img_st_nut.png",
             "title": "آجیل"
-        },
-        {
-          
-            "id": 9,
-            "icon": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_9_603b811b1d540_img_st_other2.png",
-            "title": "سایر"
         }
 ]

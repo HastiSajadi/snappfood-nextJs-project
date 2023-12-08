@@ -11,7 +11,7 @@ export default  function Category(){
     
     return(
         <>
-         <div className="container-fluid py-1 px-2 d-flex flex-row-reverse justify-content-between flex-nowrap">
+         <div className={clsx("container-fluid py-1 border-bottom px-2 d-flex flex-row-reverse justify-content-between flex-nowrap" , style.categoryContainer)}>
            {
             Api.map( ({id,title,icon}) =>{
             return(
