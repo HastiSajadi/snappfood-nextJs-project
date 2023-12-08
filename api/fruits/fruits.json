@@ -1,0 +1,42 @@
+
+{
+    "fruits": [
+      {
+        "id": "1",
+        "img": "https://cdn.snappfood.ir/300x200/uploads/images/vendors/covers/6422a253d624d.png",
+        "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/6422a253ce4e9.png",
+        "title": "میوه فروشی شادی",
+        "rate": "4.6",
+        "des": "",
+        "author": "پیک فروشنده "
+      },
+      {
+        "id": "2",
+        "img": "https://cdn.snappfood.ir/300x200/cdn/vendor_sub_types/12/01.jpg",
+        "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/62cd99c8aa51d.png",
+        "title": "هایپر میوه شهر",
+        "rate": "4.3",
+        "des": "",
+        "author": "پیک فروشنده "
+      },
+      {
+        "id": "3",
+        "img": "https://cdn.snappfood.ir/300x200/cdn/vendor_sub_types/12/03.jpg",
+        "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/61404cf660170.jpeg",
+        "title": "سوپر میوه و سبزی خرد کنی شادی",
+        "rate": "4.5",
+        "des": "",
+        "author": "پیک فروشنده "
+      },
+      {
+        "id": "4",
+        "img": "https://cdn.snappfood.ir/300x200/cdn/vendor_sub_types/12/04.jpg",
+        "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/5e98b97847203.png",
+        "title": "حاجی ارزونی بهار",
+        "rate": "4.4",
+        "des": "",
+        "author": "پیک فروشنده "
+      }
+      
+    ]
+  }
