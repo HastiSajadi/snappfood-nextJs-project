@@ -1,6 +1,5 @@
-{
-    "categories":  [
-      {  
+[
+    {  
             "id": 1,
             "icon": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png",
             "title": "رستوران"
@@ -51,5 +50,4 @@
             "icon": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_9_603b811b1d540_img_st_other2.png",
             "title": "سایر"
         }
-    ]
-}
+]

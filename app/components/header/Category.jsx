@@ -1,15 +1,13 @@
 import style from "./css/category.module.css"
 import clsx from "clsx";
-import { useEffect, useState } from "react";
 import Api from "../../../api/categories/categories.json"
-import getCategories from "@/requests/getCategories";
+// import getCategories from "@/requests/getCategories";
 
 
 
+export default  function Category(){
 
-export default async function Category(){
-
-    const categ = await getCategories();
+    // const categ = await getCategories();
     
     return(
         <>
