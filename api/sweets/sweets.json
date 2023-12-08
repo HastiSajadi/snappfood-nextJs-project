@@ -1,7 +1,7 @@
 {
     "sweets": [
       {
-        "id": "sara",
+        "id": "1",
         "img": "https://cdn.snappfood.ir/300x200/cdn/vendor_sub_types/6/15.jpg",
         "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/62a8aa6906e56.jpg",
         "title": "شیرینی سارا",
@@ -10,7 +10,7 @@
         "author": "پیک فروشنده "
       },
       {
-        "id": "vania",
+        "id": "2",
         "img": "https://cdn.snappfood.ir/300x200/cdn/vendor_sub_types/5/19.jpg",
         "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/627f451a242a7.jpg",
         "title": "قنادی وانیا",
@@ -19,7 +19,7 @@
         "author": "پیک فروشنده "
       },
       {
-        "id": "niko",
+        "id": "3",
         "img": "https://cdn.snappfood.ir/300x200/cdn/vendor_sub_types/7/03.jpg",
         "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/6456790634037.png",
         "title": "قنادی نیکو",
@@ -28,7 +28,7 @@
         "author": "پیک فروشنده "
       },
       {
-        "id": "bahar",
+        "id": "4",
         "img": "https://cdn.snappfood.ir/300x200/cdn/vendor_sub_types/7/04.jpg",
         "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/60cc2a965928b.png",
         "title": "کافه نان سرای بهار",

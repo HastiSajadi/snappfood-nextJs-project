@@ -1,7 +1,8 @@
+
 {
-    "bakery": [
+    "fruits": [
       {
-        "id": "1",
+        "id": "mandegar",
         "img": "https://cdn.snappfood.ir/300x200/cdn/vendor_sub_types/7/03.jpg",
         "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/656b438c25b64.jpg",
         "title": "نان ماندگار",
@@ -10,7 +11,7 @@
         "author": "پیک فروشنده "
       },
       {
-        "id": "2",
+        "id": "zartosht",
         "img": "https://cdn.snappfood.ir/300x200/cdn/vendor_sub_types/37/01.jpg",
         "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/61bd73911b63a.jpg",
         "title": "نان سنگک سنتی زرتشت",
@@ -19,7 +20,7 @@
         "author": "پیک فروشنده "
       },
       {
-        "id": "3",
+        "id": "beheshti",
         "img": "https://cdn.snappfood.ir/300x200/cdn/vendor_sub_types/37/01.jpg",
         "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/6120d47e68641.jpg",
         "title": "نان سنگک بهشتی",
@@ -28,7 +29,7 @@
         "author": "پیک فروشنده "
       },
       {
-        "id": "4",
+        "id": "eslami",
         "img": "https://cdn.snappfood.ir/300x200/cdn/vendor_sub_types/38/01.jpg",
         "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/619e19a6e0774.jpg",
         "title": "نان لواشی اسلامی",
