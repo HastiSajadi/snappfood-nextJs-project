@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Api from "../../../api/categories/categories.json"
 // import getCategories from "@/requests/getCategories";
 
-
+ 
 
 export default  function Category(){
 
