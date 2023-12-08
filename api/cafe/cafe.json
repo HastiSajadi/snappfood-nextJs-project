@@ -1,0 +1,41 @@
+{
+    "cafe": [
+      {
+        "id": "melo",
+        "img": "https://cdn.snappfood.ir/300x200/cdn/vendor_sub_types/10/08.jpg",
+        "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/5f43a74c646d6.jpeg",
+        "title": "قهوه ملو (ولیعصر)",
+        "rate": "4.7",
+        "des": "صبحانه و میان وعده, نوشیدنی گرم, ساندویچ",
+        "author": "پیک فروشنده "
+      },
+      {
+        "id": "jarbar",
+        "img": "https://cdn.snappfood.ir/300x200/uploads/images/vendors/covers/6521256d6a09e.jpeg",
+        "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/60c0dc287d4cc.jpg",
+        "title": "جار بار",
+        "rate": "4.7",
+        "des": "",
+        "author": "پیک فروشنده "
+      },
+      {
+        "id": "colac",
+        "img": "https://cdn.snappfood.ir/300x200/uploads/images/vendors/covers/5d8773946811b.jpg",
+        "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/5c49a31b365d1.jpg",
+        "title": "کولاک",
+        "rate": "4.3",
+        "des": "",
+        "author": "پیک فروشنده "
+      },
+      {
+        "id": "nam",
+        "img": "https://cdn.snappfood.ir/300x200/uploads/images/vendors/covers/6525032486819.jpg",
+        "icon": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/640052cf1f189.jpg",
+        "title": "کافه نام",
+        "rate": "4.3",
+        "des": "",
+        "author": "پیک فروشنده "
+      }
+      
+    ]
+  }
