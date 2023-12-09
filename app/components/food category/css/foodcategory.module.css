@@ -3,6 +3,7 @@
     font-family: IRANSansMobile!important;
     flex-direction: column;
     padding: 1rem;
+    margin-top: 11rem;
 }
 
 .title{
@@ -64,6 +65,7 @@
 @media (min-width: 768px){
     .container{
         padding: 1rem;
+        margin-top: 14rem;
     }
     .foodCart{
         width: 30%;
