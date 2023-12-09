@@ -35,7 +35,7 @@ export default function Navbar(){
             {/* //mobile features */}
             <MediaQuery maxWidth={1023}>
                 <div>
-                    <FontAwesomeIcon className={clsx(style.icons)} icon={faUser} />
+                   <button> <FontAwesomeIcon className={clsx(style.icons)} icon={faUser} /></button>
                     <FontAwesomeIcon className={clsx(style.icons, style.elementGray , "ms-4")} icon={faMagnifyingGlass} />
                 </div>
             </MediaQuery>     
