@@ -5,6 +5,7 @@ import style from "./css/navbar.module.css"
 import clsx from "clsx"
 import MediaQuery from 'react-responsive'
 import Link from "next/link";
+import ButtonLogin from "@/navigation/ButtonLogin";
 
 
 export default function Navbar(){
@@ -35,7 +36,7 @@ export default function Navbar(){
             {/* //mobile features */}
             <MediaQuery maxWidth={1023}> 
                 <div>
-                   <button> <FontAwesomeIcon className={clsx(style.icons)} icon={faUser} /></button>
+                   <ButtonLogin > <FontAwesomeIcon className={clsx(style.icons)} icon={faUser} /></ButtonLogin>
                     <FontAwesomeIcon className={clsx(style.icons, style.elementGray , "ms-4")} icon={faMagnifyingGlass} />
                 </div>
             </MediaQuery>       
