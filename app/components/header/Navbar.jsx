@@ -5,7 +5,8 @@ import style from "./css/navbar.module.css"
 import clsx from "clsx"
 import MediaQuery from 'react-responsive'
 import Link from "next/link";
-import ButtonLogin from "@/navigation/ButtonLogin";
+import Login from "@/app/(login)/page";
+/* import ButtonLogin from "@/navigation/ButtonLogin"; */
 
 
 export default function Navbar(){
@@ -15,7 +16,7 @@ export default function Navbar(){
             {/* //desktop features */}
             <MediaQuery minWidth={1024}>
             <div>
-                <Link href={'/login'} className={clsx("btn p-2 me-3 text-white fw-bold" , style.btnPink)} >
+                <Link href={'/'} className={clsx("btn p-2 me-3 text-white fw-bold" , style.btnPink)} >
                         ورود یا عضویت
                 </Link>
 
@@ -36,7 +37,7 @@ export default function Navbar(){
             {/* //mobile features */}
             <MediaQuery maxWidth={1023}> 
                 <div>
-                   <ButtonLogin > <FontAwesomeIcon className={clsx(style.icons)} icon={faUser} /></ButtonLogin>
+                   <Link href={'/'} > <FontAwesomeIcon className={clsx(style.icons)} icon={faUser} /></Link>
                     <FontAwesomeIcon className={clsx(style.icons, style.elementGray , "ms-4")} icon={faMagnifyingGlass} />
                 </div>
             </MediaQuery>       
