@@ -7,6 +7,7 @@ import MediaQuery from 'react-responsive'
 import LoginModal from "../loginModal/LoginModal"
 
 
+
 export default function Navbar(){
     return(
         <header className={style.container}>
