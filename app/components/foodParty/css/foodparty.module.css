@@ -1,0 +1,30 @@
+.partyContainer{
+    background-color: var( --sf-accent-main);
+    border-radius: 8px;
+    border-bottom-right-radius: 100px;
+    font-family: IRANSansMobile!important;
+}
+.partyDetail{
+    width: 20%;
+}
+.partyImg{
+    width: 50%;
+}
+.partyBtn{
+    width: 70%;
+    border: none;
+    padding: .5rem 1rem;
+    background-color: #fff;
+    border-radius: 50px;
+    font-weight: bold;  
+}
+.iconPink{
+    color: var(--sf-accent-main);
+    font-size: .8rem; 
+    margin-right: .5rem;
+}
+
+.sparkles{
+   width: 40px;
+   height: 40px;
+}
