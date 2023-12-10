@@ -4,8 +4,7 @@ import {faUser ,faMagnifyingGlass,faLocationCrosshairs,faChevronDown,faStore} fr
 import style from "./css/navbar.module.css"
 import clsx from "clsx"
 import MediaQuery from 'react-responsive'
-import Link from "next/link";
-import ButtonLogin from "@/navigation/ButtonLogin";
+import LoginModal from "../loginModal/LoginModal"
 
 
 export default function Navbar(){
@@ -15,10 +14,7 @@ export default function Navbar(){
             {/* //desktop features */}
             <MediaQuery minWidth={1024}>
             <div>
-                <Link href={'/login'} className={clsx("btn p-2 me-3 text-white fw-bold" , style.btnPink)} >
-                        ورود یا عضویت
-                </Link>
-
+                <LoginModal/>
                 <a className={clsx("btn p-2 link-dark")}>
                         ثبت نام فروشندگان
                         <FontAwesomeIcon className={clsx(style.icons ,"ms-2")} icon={faStore} />
@@ -36,7 +32,7 @@ export default function Navbar(){
             {/* //mobile features */}
             <MediaQuery maxWidth={1023}> 
                 <div>
-                   <ButtonLogin > <FontAwesomeIcon className={clsx(style.icons)} icon={faUser} /></ButtonLogin>
+                    <FontAwesomeIcon   className={clsx(style.icons)} icon={faUser} />
                     <FontAwesomeIcon className={clsx(style.icons, style.elementGray , "ms-4")} icon={faMagnifyingGlass} />
                 </div>
             </MediaQuery>       

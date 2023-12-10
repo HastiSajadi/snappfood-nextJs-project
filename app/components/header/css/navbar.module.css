@@ -25,14 +25,6 @@
 .colorPink{
     color: var(--sf-accent-main);
 }
-.btnPink{
-    background-color: var(--sf-accent-main)!important;
-    cursor: pointer;
-    transition: all .5s;
-}
-.btnPink:hover{
-    background-color: var(--sf-accent-dark)!important;
-}
 .logoImg{
     width: 80px;
     margin-left: 1rem;
