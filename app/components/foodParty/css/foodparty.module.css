@@ -3,6 +3,7 @@
     border-radius: 8px;
     border-bottom-right-radius: 100px;
     font-family: IRANSansMobile!important;
+    overflow-x: scroll;
 }
 .partyDetail{
     width: 20%;
