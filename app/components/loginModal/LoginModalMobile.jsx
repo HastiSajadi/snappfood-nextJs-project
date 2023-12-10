@@ -3,11 +3,10 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import clsx from "clsx"
 import style from "./css/loginModal.module.css"
-import MediaQuery from 'react-responsive'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import faUser from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faUser} from "@fortawesome/free-solid-svg-icons"
 
-export default function LoginModal() {
+export default function LoginModalDesktop() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -15,16 +14,9 @@ export default function LoginModal() {
 
   return (
     <>
-     <MediaQuery minWidth={1024}>
-     <button onClick={handleShow}  className={clsx("btn p-2 me-3 text-white fw-bold" , style.btnPink)} >
-            ورود یا عضویت
-        </button>
-     </MediaQuery>
-     
-     
-     <FontAwesomeIcon  onClick={handleShow} className={clsx(style.icons)} icon={faUser} />
-     
-       
+     <button onClick={handleShow} className="btn p-0">
+     <FontAwesomeIcon icon={faUser} />
+     </button>
       <Modal size="lg" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title><img className={clsx(style.logoImg)} src="https://s6.uupload.ir/files/snappfood_logo_g8ea.png"/></Modal.Title>
