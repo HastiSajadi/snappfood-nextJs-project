@@ -1,16 +1,5 @@
 [
     {
-        "id":1,
-        "restaurant":"P.S (فیلیپر)",
-        "deliveryPrice": "10.000 تومان",
-        "img":"https://cdn.snappfood.ir/641x641/cdn/31/59/0/vendor/5cae3c43d1a4f.jpg",
-        "title":"چلو کباب کوبیده",
-        "price":"234,000",
-        "deal":"20%",
-        "rate":"4.1",
-        "count":" 4"
-    },
-    {
         "id":2,
         "restaurant":"دیلی برگر",
         "deliveryPrice": "10.000 تومان",
@@ -53,5 +42,16 @@
         "deal":"20%",
         "rate":"4.5",
         "count":" 3"
+    },
+    {
+        "id":3,
+        "restaurant":"پیتزا شیلا (حجاب)",
+        "deliveryPrice": "10.000 تومان",
+        "img":"https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/6511852967ae9.jpg",
+        "title":"پیتزا هات چیکن",
+        "price":"268,000",
+        "deal":"20%",
+        "rate":"4.8",
+        "count":" 2"
     }
 ]

@@ -12,10 +12,10 @@ export default  function Category(){
            {
             Api.map( ({id,title,icon}) =>{
             return(
-                <Link href={'./restaurant'}  key={id} >
+                <Link className="text-decoration-none" href={'./restaurant'}  key={id} >
                 <div  className={clsx(style.categoryItems)}>
                <img className={clsx(style.categoryItemsImg , "mb-2")} src={icon} alt="foods" />
-                <p className="m-0">{title}   </p>
+                <p className="m-0 text-dark ">{title}   </p>
             </div>
             </Link>
             )

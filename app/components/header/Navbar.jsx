@@ -50,15 +50,10 @@ export default function Navbar(){
                     </div>
                 </div>
                 <FontAwesomeIcon className={clsx(style.icons , style.elementGray)} icon={faLocationCrosshairs} />
-            </div>
-
-            {/* //tablet and desktop features */}
-            <MediaQuery minWidth={768}>
                 <div>
                     <img className={clsx(style.logoImg)} src="https://s6.uupload.ir/files/snappfood_logo_g8ea.png"/>
                 </div>
-            </MediaQuery>
-            {/* //end of and desktop features    */}
+            </div>
         </header>
     )
 }

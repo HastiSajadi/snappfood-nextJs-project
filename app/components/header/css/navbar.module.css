@@ -49,3 +49,9 @@
     color: var(--sf-inactive-dark);
 }
 /* end of Navbar style */
+
+@media (max-width:760px){
+    .logoImg{
+        display: none;
+    }
+}
