@@ -1,5 +1,4 @@
-{
-    "hotdog":[
+[
         {
             "id": "1",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/65118a8e4daba.jpg",
@@ -49,4 +48,3 @@
             "price": "158,000"
         }
     ]
-}

@@ -1,5 +1,4 @@
-{
-   "pizzas":[
+[
         {
             "id": "1",
             "img": "https://cdn.snappfood.ir/641x641/cdn/94/92/product_image/zoodfood/6511852967ae9.jpg",
@@ -49,4 +48,3 @@
             "price": "238,000"
         }
     ]
-}

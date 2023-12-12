@@ -1,5 +1,4 @@
-{
-    "drinks":[
+[
         {
             "id": "1",
             "img": "https://cdn.snappfood.ir/641x641/cdn/32/64/13/product_image/zoodfood/65586bc7ee724.jpg",
@@ -41,4 +40,3 @@
             "price": "9,200"
         }
     ]
-}

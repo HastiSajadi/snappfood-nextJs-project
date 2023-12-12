@@ -1,5 +1,4 @@
-{
-    "steaks":[
+[
         {
             "id": "1",
             "img": "https://cdn.snappfood.ir/641x641/cdn/32/64/13/product_image/zoodfood/64f3080ac26a7.jpg",
@@ -25,4 +24,3 @@
             "price": "300,000"
         }
     ]
-}

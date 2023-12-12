@@ -11,7 +11,7 @@ export default function Restaurant(){
             {
                 restaurant.map(({id,img,icon,title,rate,author})=>{
                     return(
-                       <Link href={'/:id'}>
+                       <Link href={`restaurant/${id}`}>
                         <div key={id}>
                             <img src={img} />
                             <img src={icon} />
