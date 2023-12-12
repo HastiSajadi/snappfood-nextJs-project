@@ -1,17 +1,20 @@
 import Link from "next/link"
 import restaurant from "../../api/restaurants/restaurants.json"
-
-
+import { Suspense } from "react"
 export default function Restaurant(){
 
 
 
     return(
         <div>
+  
             {
                 restaurant.map(({id,img,icon,title,rate,author})=>{
                     return(
-                       <Link href={`restaurant/${id}`}>
+                      <Suspense fallback={<h1>
+                        Loading ...
+                      </h1>}>
+                         <Link href={`restaurant/${id}`}>
                         <div key={id}>
                             <img src={img} />
                             <img src={icon} />
@@ -20,6 +23,7 @@ export default function Restaurant(){
                             <p>{author}</p>
                         </div>
                        </Link>
+                      </Suspense>
                     )
                 })
             }
