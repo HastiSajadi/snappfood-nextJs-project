@@ -142,6 +142,7 @@ body{
   box-sizing: border-box;
 }
 
+
 /* swiper navigation custom style */
 .swiper-button-prev,
 .swiper-button-next{
@@ -181,3 +182,6 @@ body{
     width: 100%;
   }
 }
+
+
+

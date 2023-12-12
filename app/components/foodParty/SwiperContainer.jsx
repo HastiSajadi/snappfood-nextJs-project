@@ -26,33 +26,32 @@ export default function SwiperContainer(){
         // when window width is >= 768px
         768: {
           width: 768,
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
         1024: {
-          width: 1024,
+          width: 970,
           slidesPerView: 3,
         },
       }}
         modules={[Navigation, A11y]}
         navigation
-        spaceBetween={50}
+        spaceBetween={-10}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
-        rtl={true}
       >
         {
             Api.map(({id , title , img , restaurant , deliveryPrice , price , deal , rate , count})=>{
                 return(
                     <SwiperSlide >
-                    <div key={id} className={clsx("bg-white text-dark rounded-4 d-flex flex-column  p-5 align-items-center " , style.cards)}>
+                    <div key={id} className={clsx("bg-white  text-dark rounded-4 d-flex flex-column  p-5 align-items-center " , style.cards)}>
                     <p className={clsx("m-0" , style.cardInfo)}>{restaurant}</p>
                     <p className={clsx("m-0" , style.cardInfo)}>پیک فروشنده {deliveryPrice}</p>
-                    <img className="w-50 rounded my-4" alt="food" src={img} />
+                    <img className="w-75 rounded my-3" alt="food" src={img} />
                     <h4 className={clsx("h5 mb-5" , style.cardFoodTitle)}>{title}</h4>
                     <div className="w-100 d-flex justify-content-between">
                         <div>
                             <div className="d-flex">
-                            <p className="badge bg-danger me-2 mb-2">{deal}</p>
+                            <p className={clsx("badge me-2 mb-2" , style.badge)}>{deal}</p>
                             <span className={style.dealText}>{price}</span>
                             </div>
                             <div>
