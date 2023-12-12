@@ -19,6 +19,8 @@
     "react": "18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "18.2.0",
-    "react-responsive": "^9.0.2"
+    "react-id-swiper": "^4.0.0",
+    "react-responsive": "^9.0.2",
+    "swiper": "^11.0.5"
   }
 }
