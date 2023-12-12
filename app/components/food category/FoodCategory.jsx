@@ -3,6 +3,7 @@ import clsx from "clsx"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faChevronLeft} from "@fortawesome/free-solid-svg-icons"
 import Api from "../../../api/food-category/foodCategory.json"
+import Link from "next/link"
 
 export default function FoodCategory(){
     return(
@@ -13,13 +14,17 @@ export default function FoodCategory(){
                 {
                     Api.map(({id,title,img})=>{
                         return(
-                            <div key={id} className={clsx(style.foodCart ,"d-flex justify-content-center align-items-center my-lg-4")}>
+                         
+                            <div  key={id} className={clsx(style.foodCart ,"d-flex justify-content-center align-items-center my-lg-4")}>
+                                 <Link href={"*"}>
                                 <img className={clsx(style.foodImg)} src={img} alt={title} />
                                 <div className={clsx(style.foodTitle)}>
                                   <FontAwesomeIcon className={clsx(style.foodTitleIcon)} icon={faChevronLeft} />
                                   <a > {title}</a>
                                 </div>
+                                </Link>
                             </div>
+                         
                         )
                     })
                 }
