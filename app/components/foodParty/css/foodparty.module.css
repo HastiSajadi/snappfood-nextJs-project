@@ -1,9 +1,11 @@
 .partyContainer{
-    background-color: var( --sf-accent-main);
+    background: linear-gradient(90deg, rgba(250,40,75,1) 0%, rgba(255,0,166,1) 100%);
     border-radius: 8px;
     border-bottom-right-radius: 100px;
     font-family: IRANSansMobile!important;
     width: 100%;
+    height: fit-content;
+    flex-direction: row-reverse;
 }
 .partyDetail{
     width: 30%;
@@ -45,4 +47,10 @@
     text-decoration: line-through;
     font-size: .7rem;
     color: var( --sf-carbon-light);
+}
+
+@media (max-width:1023px){
+    .partyDetail{
+        width: 100%;
+    }
 }

@@ -13,10 +13,29 @@ import '../../../node_modules/swiper/modules/navigation.css';
 export default function SwiperContainer(){
     return (
       <Swiper
+      breakpoints={{
+        480: {
+          width: 480,
+          slidesPerView: 1,
+        },
+        // when window width is >= 640px
+        640: {
+          width: 640,
+          slidesPerView: 1,
+        },
+        // when window width is >= 768px
+        768: {
+          width: 768,
+          slidesPerView: 2,
+        },
+        1024: {
+          width: 1024,
+          slidesPerView: 3,
+        },
+      }}
         modules={[Navigation, A11y]}
         navigation
         spaceBetween={50}
-        slidesPerView={3}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         rtl={true}
