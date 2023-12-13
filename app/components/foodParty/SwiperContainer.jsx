@@ -5,12 +5,19 @@ import clsx from "clsx"
 import style from "./css/foodparty.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faStar} from "@fortawesome/free-solid-svg-icons"
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, A11y } from 'swiper/modules';
 import '../../../node_modules/swiper/modules/navigation.css';
-
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 
 export default function SwiperContainer(){
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
     return (
       <Swiper
       breakpoints={{
@@ -43,7 +50,7 @@ export default function SwiperContainer(){
             Api.map(({id , title , img , restaurant , deliveryPrice , price , deal , rate , count})=>{
                 return(
                     <SwiperSlide >
-                    <div key={id} className={clsx("bg-white  text-dark rounded-4 d-flex flex-column  p-5 align-items-center " , style.cards)}>
+                    <div key={id} onClick={handleShow} className={clsx("bg-white  text-dark rounded-4 d-flex flex-column  p-5 align-items-center " , style.cards)}>
                     <p className={clsx("m-0" , style.cardInfo)}>{restaurant}</p>
                     <p className={clsx("m-0" , style.cardInfo)}>پیک فروشنده {deliveryPrice}</p>
                     <img className="w-75 rounded my-3" alt="food" src={img} />
@@ -65,9 +72,9 @@ export default function SwiperContainer(){
                             {rate}
                             </span>
                         </div>
-                        <div>
-                            <span className='text-end'>عدد </span>
-                            {count}
+                        <div className='d-flex align-items-end'>
+                          <span className={style.countText}>عدد باقی مانده</span>
+                          <p className='m-0 ms-1 fw-bold'>{count} </p>
                         </div>
                         </div>
                     </div>
@@ -76,6 +83,30 @@ export default function SwiperContainer(){
                 )
             })
         }
+        <Modal size="lg" show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title><img className={clsx(style.logoImg)} src="https://i.ibb.co/FhQJQDd/snappfood-logo.png"/></Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className={clsx("d-flex flex-column p-3  align-items-end" , style.modalBody)}>
+          <p className="h5">
+            <span className="h3">ورود</span>
+            <span className="mx-2">یا</span>
+            <span className="h3">عضویت</span>
+          </p>
+
+          <p className="mb-2 mt-4 text-secondary">شماره تلفن همراه</p>
+          <input className={style.numberInput} type="text" />
+          <p className="mb-2 mt-2 text-secondary">شماره با ۰۹ شروع می‌شود</p>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className={clsx("disabled border-0 w-100 p-3 text-dark fw-bold" , style.submitBtn)} onClick={handleClose}>
+            ادامه 
+          </Button>
+        </Modal.Footer>
+      </Modal>
       </Swiper>
+      
     );
   };

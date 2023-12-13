@@ -51,7 +51,7 @@ export default function Navbar(){
                 </div>
                 <FontAwesomeIcon className={clsx(style.icons , style.elementGray)} icon={faLocationCrosshairs} />
                 <div>
-                    <img className={clsx(style.logoImg)} src="https://s6.uupload.ir/files/snappfood_logo_g8ea.png"/>
+                    <img className={clsx(style.logoImg)} src="https://i.ibb.co/FhQJQDd/snappfood-logo.png"/>
                 </div>
             </div>
         </header>

@@ -52,7 +52,9 @@
 .badge{
     background-color: var(--sf-accent-light)!important;
 }
-
+.countText{
+    font-size: .7rem;
+}
 @media (max-width:1022px){
     .partyDetail{
         width: 100%;

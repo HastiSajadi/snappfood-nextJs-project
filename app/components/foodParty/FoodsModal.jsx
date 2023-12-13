@@ -2,9 +2,9 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import clsx from "clsx"
-import style from "./css/loginModal.module.css"
+import style from '../loginModal/css/loginModal.module.css'
 
-export default function LoginModalDesktop() {
+export default function FoodsModal() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -12,9 +12,7 @@ export default function LoginModalDesktop() {
 
   return (
     <>
-      <button onClick={handleShow}  className={clsx("btn p-2 me-3 text-white fw-bold" , style.btnPink)} >
-            ورود یا عضویت
-      </button>
+      
       <Modal size="lg" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title><img className={clsx(style.logoImg)} src="https://i.ibb.co/FhQJQDd/snappfood-logo.png"/></Modal.Title>
