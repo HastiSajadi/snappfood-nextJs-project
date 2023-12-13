@@ -1,4 +1,3 @@
-'use client'
 
 import style from "./css/category.module.css"
 import clsx from "clsx";
