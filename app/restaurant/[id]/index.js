@@ -8,7 +8,12 @@ import salads_fries from "../../../api/foods/salads_fries.json";
 import steaks from "../../../api/foods/steaks.json";
 
 
-
+export * from "./Burger";
+export * from "./Pizza";
+export * from "./HotDog";
+export * from "./Steak";
+export * from "./Appetizer";
+export * from "./Drinks";
 
 
 
