@@ -7,7 +7,7 @@ import Link from "next/link"
 
 // import Something from "./restaurantCarousel"
 
-export default function Gifts(){
+export const  Gifts = () =>{
 
 
    
