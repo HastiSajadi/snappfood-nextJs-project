@@ -2,13 +2,20 @@ import Link from "next/link"
 import restaurant from "../../api/restaurants/restaurants.json"
 import { Suspense } from "react"
 import BreadCrums from "./BreadCrums"
+
+export const metadata = {
+    title: ' سفارش آنلاین غذا از تمامی رستوران ها  و فست فود ها',
+    description: 'snapp food',
+  }
 export default function Restaurant(){
  
-   
 
-   
+
+  
+  
 const breadcrum = [
-  {id:0, name: "رستوران ها"},
+    {id:0, name: "اسنپ فود"},
+  {id:1, name: "رستوران ها"}
   
   
 ]
@@ -24,6 +31,18 @@ const breadcrum = [
             <option> عملکرد کلی</option>
             <option> گرانترین </option>
             </select> 
+            <BreadCrums >
+            {
+                breadcrum.map(bread=>
+                    <li key={bread.id}>
+                     <p>{bread.name}</p>
+                    </li>
+                    )
+            }
+            </BreadCrums>
+            <div>
+
+            <div>
             {
                 restaurant.map(({id,img,icon,title,rate,author})=>{
 
@@ -48,16 +67,38 @@ const breadcrum = [
                     )
                 })
             }
+            </div>
+           <div>
+           <div>
+                <ul>
+                    <li>همه دسته‌بندی‌ها</li>
+                    <Link href="/restaurant"><li>فست‌فود</li></Link>
+                    <Link href="*"><li>ایرانی</li></Link>
+                    <Link href="*"><li>کباب</li></Link>
+                    <Link href="*"><li>سالاد</li></Link>
+                    <Link href="*"><li>دریایی</li></Link>
+                    <Link href="*"><li>بین الملل</li></Link>
+                </ul>
+            </div>
 
-            <BreadCrums >
-            {
-                breadcrum.map(bread=>
-                    <li key={bread.id}>
-                     <p>{bread.name}</p>
-                    </li>
-                    )
-            }
-            </BreadCrums>
+            <div>
+            کلاس قیمتی 
+            <div>
+                <span>همه</span> <span>اقتصادی</span>  <span>متوسط</span> <span>گران</span>
+            </div>
+            </div>
+            <div>
+                <li>دارای کوپن</li>
+                <li>دارای  تخفیف</li>
+                <li>ارسال اکسپرس </li>
+                <li>فودپرو</li>
+                <li>رستوران‌های به‌صرفه</li>
+                <li>خوش‌قیمت</li>
+            </div>
+           </div>
+            </div>
+
+          
 
         </div>
     )
