@@ -7,7 +7,7 @@ import style from "./css/foodparty.module.css"
 import MediaQuery from 'react-responsive'
 
 
-export default function FoodParty(){
+export const  FoodParty = () =>{
     return(
         <div className="container-fluid mt-5">
             
