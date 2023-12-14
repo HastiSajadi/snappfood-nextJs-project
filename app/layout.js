@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
     <html>
       <body>
         {pathname === "/"  && <Header/>}
-        
-        {children}
         {pathname === "/restaurant" && <Header/>}
+        {children}
+        
         </body>
     </html>
   )

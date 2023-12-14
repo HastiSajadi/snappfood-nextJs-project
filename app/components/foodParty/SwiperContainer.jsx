@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../../node_modules/swiper/swiper.css';
-import Api from "../../../api/foodParty/foodParty.json"
+import Foodparty from "../../../api/foodParty/foodParty.json"
 // import Api2 from "../../../api/foodParty/usersComment.json"
 import clsx from "clsx"
 import style from "./css/foodparty.module.css"
@@ -40,6 +40,7 @@ export default function SwiperContainer(){
           slidesPerView: 3,
         },
       }}
+        
         modules={[Navigation, A11y]}
         navigation
         spaceBetween={-10}
@@ -47,7 +48,7 @@ export default function SwiperContainer(){
         onSwiper={(swiper) => console.log(swiper)}
       >
         {
-            Api.map(({id , title ,des , img , restaurant , deliveryPrice , price , deal , rate , count})=>{
+            Foodparty.map(({id , title ,des , img , restaurant , deliveryPrice , price , deal , rate , count})=>{
                 return(
                     <SwiperSlide >
                     <div key={id} onClick={handleShow} className={clsx("bg-white  text-dark rounded-4 d-flex flex-column  p-5 align-items-center " , style.cards)}>
@@ -137,7 +138,7 @@ export default function SwiperContainer(){
                       <div className='w-100 d-flex flex-column align-items-end'>
                               <p className={clsx(style.commentSecTitle)}>نظرات کاربران</p>
                               {/* {
-                                Api2.map((date,names,rate,text,id)=>{
+                                Api2.map(({date,names,rate,text,id})=>{
                                   return(
                                     <div key={id}>
                                       <div className='w-100 border-bottom border-black-50 p-2 d-flex'>
