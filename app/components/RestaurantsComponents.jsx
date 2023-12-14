@@ -18,9 +18,9 @@ export const  RestaurantsComponents =() => {
           {
             restaurant.map(({id,img,icon,title,rate})=>{
                 return(
-                    <div key={id} className={clsx(style.restCard , "m-2")}>
-                      <Link href={`restaurant/${id}`} >
-                      <div className={style.restBackgroundContainer}>
+                    <div key={id} className={clsx(style.restCard , "m-2 ")}>
+                      <Link className="text-decoration-none text-dark"  href={`restaurant/${id}`} >
+                      <div className={clsx(style.restBackgroundContainer)}>
                         <img className={style.restBackground} src={img} />
                       </div>
                       <div className="d-flex flex-column align-items-center">
