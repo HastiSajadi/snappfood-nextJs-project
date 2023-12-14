@@ -101,6 +101,12 @@
     .partyDetail{
         width: 100%;
     }
+    .modalBody{
+        max-height: 400px;
+    }
+    .foodSec{
+        flex-direction: column-reverse;
+    }
 }
 
 @media (min-width:1023px){
