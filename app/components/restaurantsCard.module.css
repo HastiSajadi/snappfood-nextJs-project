@@ -54,5 +54,12 @@
 
 .restsMain{
     direction: rtl;
+    max-width: 100%;
 }
 
+@media (max-width:426px){
+    .restCard{
+
+        min-width: 80%;
+    }
+}

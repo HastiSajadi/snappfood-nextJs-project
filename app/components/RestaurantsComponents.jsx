@@ -14,7 +14,7 @@ export const  RestaurantsComponents =() => {
 
     return(
 
-      <div className={clsx("d-flex overflow-x-scroll p-1 mt-3", style.restsMain)}>
+      <div className={clsx("d-flex overflow-x-scroll p-2 mt-3", style.restsMain)}>
           {
             restaurant.map(({id,img,icon,title,rate})=>{
                 return(
