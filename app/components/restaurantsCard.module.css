@@ -53,6 +53,6 @@
 }
 
 .restsMain{
-    scrollbar-color: var(--sf-carbon-light);
-    scrollbar-width: thin;
+    direction: rtl;
 }
+
