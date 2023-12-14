@@ -7,3 +7,4 @@ export * from "./NewsInSnapp/NewsInSnapp";
 export * from "./Options/Options";
 export * from "./SpecialTastes/SpecialTastes";
 export * from "./UsersSuggestion/UsersSuggestion";
+export * from "./snap application/SnapApplication";
