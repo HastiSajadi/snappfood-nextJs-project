@@ -5,7 +5,7 @@ import {faChevronLeft} from "@fortawesome/free-solid-svg-icons"
 import Api from "../../../api/food-category/foodCategory.json"
 import Link from "next/link"
 
-export default function FoodCategory(){
+export const  FoodCategory =()=>{
     return(
         <>
         <div className={clsx("d-flex  align-items-end container-fluid" , style.container)}>
