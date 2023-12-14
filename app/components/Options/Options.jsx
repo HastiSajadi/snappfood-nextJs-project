@@ -5,7 +5,7 @@ import {faChevronLeft} from "@fortawesome/free-solid-svg-icons"
 import Link from "next/link"
 
 
-export default function Options(){
+export const  Options = () =>{
 
 
    
