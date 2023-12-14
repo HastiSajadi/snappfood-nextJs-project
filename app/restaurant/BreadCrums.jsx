@@ -1,8 +1,9 @@
 import { Children } from "react"
-
+import {faChevronLeft} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function BreadCrums({children}){
-
+const back = <FontAwesomeIcon  icon={"arrow-left"}/>
     const childArray = Children.toArray(children)
 
     return(
@@ -15,11 +16,13 @@ export default function BreadCrums({children}){
                     return(
                         <div>
                             {child}
-                            {!isLastItem && <span> / </span>}
+                            {!isLastItem && <span class="material-icons "><FontAwesomeIcon icon={faChevronLeft}/></span>}
                        </div>
                     )
                 }))
-            }
+                            }
+                          
+                         
         </div>
     )
 }
