@@ -5,9 +5,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Burger,Pizza , HotDog, Steak,Appetizer,Drinks} from "./index";
 import restaurant from "../../../api/restaurants/restaurants.json";
+
+
 export default   function Menu(){
    
-
+  
   
     return(
         <div>

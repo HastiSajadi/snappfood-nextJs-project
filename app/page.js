@@ -9,6 +9,10 @@ import SpecialTastes from './components/SpecialTastes/SpecialTastes';
 import UsersSuggestion from './components/UsersSuggestion/UsersSuggestion';
 import style from "./page.module.css"
 
+export const metadata = {
+  title: 'اسنپ فود | سفارش آنلاین غذا از تمامی رستوران ها  و فست فود ها',
+  description: 'snapp food',
+}
 
 export default function Home() {
   return (
