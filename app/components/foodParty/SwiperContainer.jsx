@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../../node_modules/swiper/swiper.css';
 import Foodparty from "../../../api/foodParty/foodParty.json"
-// import Api2 from "../../../api/foodParty/usersComment.json"
+import Api2 from "../../../api/foodParty/usersComment.json"
 import clsx from "clsx"
 import style from "./css/foodparty.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -96,8 +96,8 @@ export default function SwiperContainer(){
                   <Modal.Header closeButton></Modal.Header>
                   <Modal.Body>
                     <div className={clsx('container-fluid p-2', style.modalBody)} >
-                      <div className='row d-flex justify-content-end'>
-                        <div className='col-7 d-flex flex-column mt-2 '>
+                      <div className={clsx(style.foodSec , 'row d-flex justify-content-end')} >
+                        <div className='col-12 col-lg-7 d-flex flex-column mt-2 '>
                           <div className='d-flex mb-3 justify-content-between w-100'>
                             <div >
                               <span className=" px-1 border-opacity-10 border rounded-1">
@@ -130,48 +130,46 @@ export default function SwiperContainer(){
                             <p className='h6'>ارسال اکسپرس</p>
                           </div>
                         </div>
-                        <div className='col-5 d-flex'>
+                        <div className='col-12 col-lg-5 d-flex'>
                         <img className="w-100 rounded my-3" alt="food" src={img} />
                         </div>
                       </div>
                       {/* بخش نظرات کاربران */}
-                      <div className='w-100 d-flex flex-column align-items-end'>
+                      <div className={clsx('w-100 mt-5 d-flex flex-column align-items-end',style.commentSec)}>
                               <p className={clsx(style.commentSecTitle)}>نظرات کاربران</p>
-                              {/* {
-                                Api2.map(({date,names,rate,text,id})=>{
+                              {
+                                Api2.map(({names,rate,text,id})=>{
                                   return(
-                                    <div key={id}>
-                                      <div className='w-100 border-bottom border-black-50 p-2 d-flex'>
-                                      <div className='text-end me-5'>
-                                        <p>{text}</p>
-                                    </div>
-                                    <div className='d-flex flex-column'>
-                                      <h4>{names}</h4>
-                                      <p>{date}</p>
-                                      <span className="mb-2">
-                                        <FontAwesomeIcon className="text-warning me-1" icon={faStar} />
-                                        {rate}
-                                      </span>
-                                    </div>
-                                
+                                    <div className='w-100' key={id}>
+                                      <div className=' border-bottom border-black-50 p-2 d-flex align-items-center'>
+                                        <div className='text-end w-100 me-5'>
+                                          <p>{text}</p>
+                                        </div>
+                                        <div className='d-flex flex-column text-end'>
+                                          <h4 className='fw-bold h5'>{names}</h4>
+                                          <div className='d-flex justify-content-end my-2'>
+                                            <p className='m-0'> ۱۴۰۲ </p>
+                                            <span className='mx-1'>آذر</span>
+                                            <p className='m-0'> ۱۷ </p>
+                                          </div>
+                                          <span className="mb-2">
+                                            {rate}
+                                            <FontAwesomeIcon className="text-warning ms-1" icon={faStar} />
+                                          </span>
+                                        </div>                                
                                       </div>
                                     </div>
                                   )
                                 })
-                              } */}
+                              }
                       </div>
                     </div>
                   </Modal.Body>
-
                 </Modal>
-
-
                 </SwiperSlide>
                 )
             })
         }
-        
       </Swiper>
-      
     );
   };
