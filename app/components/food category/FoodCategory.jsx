@@ -16,7 +16,7 @@ export default function FoodCategory(){
                         return(
                          
                             <div  key={id} className={clsx(style.foodCart ,"d-flex justify-content-center align-items-center my-lg-4")}>
-                                 <Link href={"*"}>
+                                 <Link href={'/restaurant'}>
                                 <img className={clsx(style.foodImg)} src={img} alt={title} />
                                 <div className={clsx(style.foodTitle)}>
                                   <FontAwesomeIcon className={clsx(style.foodTitleIcon)} icon={faChevronLeft} />
@@ -29,6 +29,8 @@ export default function FoodCategory(){
                     })
                 }
             </div>
+       
+
         </div>
         </>
     )
