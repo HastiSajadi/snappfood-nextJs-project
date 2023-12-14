@@ -63,6 +63,10 @@
 
 .modalBody{
     font-family: IRANSansMobile;
+    max-height: 700px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 .modalSubmitBtn{
     height: 40px;
@@ -77,12 +81,16 @@
     background-color: #ffd9ef!important;
     color: var(--sf-accent-main)!important;
 }
+
+
 .commentSecTitle{
     font-size: 1.2rem;
     font-weight: bold; 
     color: #53565C;
 } 
-
+.commentSec{
+    width: 100%;
+}
 
 
 
@@ -92,6 +100,12 @@
 @media (max-width:1022px){
     .partyDetail{
         width: 100%;
+    }
+    .modalBody{
+        max-height: 400px;
+    }
+    .foodSec{
+        flex-direction: column-reverse;
     }
 }
 
