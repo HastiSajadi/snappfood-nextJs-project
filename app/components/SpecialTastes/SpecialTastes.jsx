@@ -7,7 +7,7 @@ import { RestaurantsComponents } from "../RestaurantsComponents"
 import Link from "next/link"
 // import Something from "./restaurantCarousel"
 
-export default function SpecialTastes(){
+export const  SpecialTastes = () => {
 
 
    
