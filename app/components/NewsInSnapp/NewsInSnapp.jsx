@@ -7,7 +7,7 @@ import Link from "next/link"
 import { RestaurantsComponents } from "../RestaurantsComponents"
 // import Something from "./restaurantCarousel"
 
-export default function NewsInSnapp(){
+export const  NewsInSnapp = () =>{
 
 
    
