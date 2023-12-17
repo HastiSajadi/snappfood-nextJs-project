@@ -12,7 +12,7 @@ export const SnapApplication = () => {
 
     const handleSubmitForm = (e) => {
         e.preventDefault()
-        if(!number.trim()){
+        if(!number){
             alert("please enter your phone")
         }setNumber(e.target.value)
     }
