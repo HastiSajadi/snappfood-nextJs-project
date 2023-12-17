@@ -3,6 +3,7 @@
 import './globals.css'
 import Header from './components/header/Header'
 import { usePathname } from 'next/navigation';
+import Footer from './components/footer/Footer';
 
 
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         {pathname === "/restaurant" && <Header/>}
 
         {children}
+        <Footer/>
         </body>
     </html>
   )
