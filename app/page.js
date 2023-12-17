@@ -25,8 +25,8 @@ const Home = ()=> {
      <Options/>
      <SnapApplication />
      <Sellers />
-     <div className={clsx(style.footerHead , "mb-5 ")}>
-        <h6 className='fw-bold'>اسنپ‌‌‌‌‌‌‌‍ فود در شهرهای ایران</h6>
+     <div className={clsx(style.footerHead , "mb-5")}>
+        <h6 className='fw-bold me-5'>اسنپ‌‌‌‌‌‌‌‍ فود در شهرهای ایران</h6>
      </div>
      </main>
     </>

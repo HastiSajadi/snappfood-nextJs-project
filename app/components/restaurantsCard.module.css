@@ -46,6 +46,7 @@
     margin-bottom: 1.8rem;
     font-size: .8rem;
     box-shadow: var(--sf-shadows-high);
+    flex-direction: row-reverse;
 }
 .helmet{
     width: 20px;
