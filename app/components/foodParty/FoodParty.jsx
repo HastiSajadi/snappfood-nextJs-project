@@ -6,7 +6,6 @@ import SwiperContainer from "./SwiperContainer"
 import style from "./css/foodparty.module.css"
 import MediaQuery from 'react-responsive'
 
-
 export const  FoodParty = () =>{
     return(
         <div className="container-fluid mt-5">
@@ -20,7 +19,7 @@ export const  FoodParty = () =>{
                     <img className={clsx(style.partyImg)} src="https://cdn.snappfood.ir/uploads/images/review-app/icons/count/jek/1_jek_non_active.png" />
                     <div className="d-flex justify-content-end align-items-center mb-3">
                      <h1 className="mt-3">فود پارتی</h1>
-                     <img className={style.sparkles} src="https://s6.uupload.ir/files/sparkles-svgrepo-com_uzt9.png" />
+                     <img className={style.sparkles} src="https://i.ibb.co/TRN5fbb/sparkles-svgrepo-com.png" />
                     </div>
                     <p>تخفیفات لحظه‌ای ویژه شما</p>
                     <button className={clsx(style.partyBtn , "mb-4")}>
@@ -44,7 +43,7 @@ export const  FoodParty = () =>{
                     <img className={clsx(style.partyImg)} src="https://cdn.snappfood.ir/uploads/images/review-app/icons/count/jek/1_jek_non_active.png" />
                     <div className="d-flex justify-content-end align-items-center mb-3">
                      <h1 className="mt-4">فود پارتی</h1>
-                     <img className={style.sparkles} src="https://s6.uupload.ir/files/sparkles-svgrepo-com_uzt9.png" />
+                     <img className={style.sparkles} src="https://i.ibb.co/TRN5fbb/sparkles-svgrepo-com.png" />
                     </div>
                     <p>تخفیفات لحظه‌ای ویژه شما</p>
                     <button className={clsx(style.partyBtn , "mb-4")}>

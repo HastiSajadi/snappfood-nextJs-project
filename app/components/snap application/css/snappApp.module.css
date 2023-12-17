@@ -43,6 +43,7 @@
     text-align: end;
     border-radius: 5px;
     box-shadow: var( --sf-shadows-high);
+    outline: none;
 }
 .formInputGroup button{
     position: absolute;
