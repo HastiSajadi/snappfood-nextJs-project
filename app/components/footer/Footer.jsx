@@ -4,9 +4,7 @@ import style from "./css/footer.module.css"
 export default function Footer(){
     return(
         <div className={clsx("container-fluid border-top  p-4", style.footerContainer)}>
-            <div className={clsx(style.footerHead , "mb-5")}>
-                <h6>اسنپ فود در شهر های ایران</h6>
-            </div>
+            
             <div className={clsx("d-flex justify-content-between align-items-lg-start mx-3  p-3" , style.main)}>
                 <div className="d-flex">
                         <img className={style.footerImg} src="https://snappfood.ir/static/images/senf.png" />

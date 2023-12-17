@@ -3,3 +3,8 @@ main.main {
     max-width: 85.375rem;
     margin: auto;
 }
+.footerHead{
+    width: 100%;
+    text-align: end;
+    font-family: IRANSansMobile;
+}

@@ -5,10 +5,7 @@
 .main{
     background-color: var(--sf-surface-main);
 }
-.footerHead{
-    width: 100%;
-    text-align: end;
-}
+
 
 .footerImg{
     width: 70px;
