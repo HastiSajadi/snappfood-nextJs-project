@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import style from "./page.module.css"
 import clsx from "clsx"
 import "../globals.css"
+import { Restaurants } from "./components/restaurants/Restaurant"
+
 
 export const metadata = {
     title: ' سفارش آنلاین غذا از تمامی رستوران ها  و فست فود ها',
@@ -31,6 +33,17 @@ export default function Restaurant(){
             }
             </BreadCrums>
             <Sort/>
+
+            <div className="container-fluid p-0 mt-5">
+                <div className="row">
+                    <div className="col-lg-9 col-12 p-0">
+                        <Restaurants/>
+                    </div>
+                    <div className="col-lg-3 col-12 p-0">
+                        
+                    </div>
+                </div>
+            </div>
         </main>
         </>
     )
