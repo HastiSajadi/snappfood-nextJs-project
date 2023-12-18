@@ -37,15 +37,16 @@ export default function Restaurant(){
             </BreadCrums>
             <Sort/>
 
-            <div className="container-fluid p-0 mt-5">
-                <div className="row">
-                    <div className="col-lg-9 col-md-7 col-12 p-0">
-                        <Restaurants/>
-                    </div>
-                    <div className="col-lg-3 col-md-5 col-12 p-0">
+            <div className={clsx("container-fluid p-0 mt-5" , style.container)}>
+                <div className="row flex-row-reverse">
+                    
+                    <div className="col-lg-3  col-md-5 col-12 p-0">
                         <Sidebar/>
                         <PriceClass/>
                         <Options/>
+                    </div>
+                    <div className="col-lg-9 col-md-7 col-12 p-0">
+                        <Restaurants/>
                     </div>
                 </div>
             </div>
