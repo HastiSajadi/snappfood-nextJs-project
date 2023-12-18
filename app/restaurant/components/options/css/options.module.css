@@ -1,0 +1,34 @@
+.container{
+    padding: 1rem;
+    width: 100%;
+    border: .1rem solid #eee;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.itemsContainer{
+    padding: .8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    font-family: IRANSansMobile;
+    font-size: .9rem;
+    color: var(--sf-carbon-light);
+    border-bottom: .1rem solid #eee;
+    width: 100%;
+}
+
+.iconContainer{
+    width: 40px;
+    background-color:var(--sf-inactive-main);
+    border-radius: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .2rem .1rem;
+    cursor: pointer;
+}
+.icon{
+    font-size: 1.2rem;
+}
