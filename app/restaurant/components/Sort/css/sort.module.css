@@ -1,0 +1,12 @@
+.formSelect{
+    width: 16%!important;
+    direction: rtl!important;
+    background-position: left 0.75rem center!important;
+    font-family: IRANSansMobile;
+    color: var(--sf-inactive-dark)!important;
+    padding: .7rem .5rem!important;
+}
+
+.formSelect option{
+    color: #000!important;
+}
