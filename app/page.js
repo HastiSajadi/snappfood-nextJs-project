@@ -5,7 +5,7 @@ import style from "./page.module.css"
 import dynamic from "next/dynamic"
 import clsx from 'clsx';
 import { Bests, FoodCategory, FoodParty,Gifts,NewsInSnapp,Options ,SpecialTastes,UsersSuggestion,SnapApplication, Sellers } from './components'
-import Provid from './provider';
+
 
 
 
@@ -17,7 +17,6 @@ export const metadata = {
 const Home = ()=> {
   
   return (
-    <Provid>
      <main className={style.main}>
      <FoodCategory/>
      <FoodParty/>
@@ -33,7 +32,6 @@ const Home = ()=> {
         <h6 className='fw-bold me-5'>اسنپ‌‌‌‌‌‌‌‍ فود در شهرهای ایران</h6>
      </div>
      </main>
-    </Provid>
   )
 }
 
