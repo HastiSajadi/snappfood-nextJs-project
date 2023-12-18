@@ -9,6 +9,7 @@ import clsx from "clsx"
 import "../globals.css"
 import { Restaurants } from "./components/restaurants/Restaurant"
 import Sidebar from "./components/sidebar/Sidebar"
+import PriceClass from "./components/price class/PriceClass"
 
 
 export const metadata = {
@@ -42,6 +43,7 @@ export default function Restaurant(){
                     </div>
                     <div className="col-lg-3 col-md-5 col-12 p-0">
                         <Sidebar/>
+                        <PriceClass/>
                     </div>
                 </div>
             </div>
