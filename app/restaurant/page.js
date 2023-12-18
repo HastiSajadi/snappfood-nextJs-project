@@ -8,6 +8,7 @@ import style from "./page.module.css"
 import clsx from "clsx"
 import "../globals.css"
 import { Restaurants } from "./components/restaurants/Restaurant"
+import Sidebar from "./components/sidebar/Sidebar"
 
 
 export const metadata = {
@@ -36,11 +37,11 @@ export default function Restaurant(){
 
             <div className="container-fluid p-0 mt-5">
                 <div className="row">
-                    <div className="col-lg-9 col-12 p-0">
+                    <div className="col-lg-9 col-md-7 col-12 p-0">
                         <Restaurants/>
                     </div>
-                    <div className="col-lg-3 col-12 p-0">
-                        
+                    <div className="col-lg-3 col-md-5 col-12 p-0">
+                        <Sidebar/>
                     </div>
                 </div>
             </div>

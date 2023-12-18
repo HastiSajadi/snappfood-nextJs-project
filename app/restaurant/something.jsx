@@ -5,32 +5,7 @@
 
 
 
-            <div>
-
-            <div>
-            {
-                restaurant.map(({id,img,icon,title,rate,author})=>{
-
-                    return(
-                      <Suspense fallback={<div>
-                        <h1>
-                        Loading ...
-                      </h1>
-                      </div>}>
-                         <Link href={`restaurant/${id}`}>
-                        <div key={id}>
-                            <img src={img} />
-                            <img src={icon} />
-                            <h1>{title}</h1>
-                            <h3>{rate}</h3>
-                            <p>{author}</p>
-                        </div>
-                       </Link>
-                      </Suspense>
-                    )
-                })
-            }
-            </div>
+           
            <div>
            <div>
                 <ul>
