@@ -7,6 +7,7 @@ import BreadCrums from "../BreadCrums"
 import clsx from "clsx"
 import Navbar from './components/navbar/Navbar';
 import style from "./page.module.css"
+import SidebarRight from './components/sidebars/SidebarRight';
 
 export default   function Menu(){
    
@@ -30,6 +31,33 @@ export default   function Menu(){
               )
             }
           </BreadCrums>
+          <article>
+    <div class="container-fluid mt-5">
+        
+        <div class="row text-center">
+        <div class="col-3">
+              <div class="sidebar-item">
+                <div class="make-me-sticky">
+                  <h3>Item 1</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-5">
+
+                <div class="content-section">
+                    <h2>Content Section</h2>
+                </div>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-end">
+              <div class="sidebar-item">
+                <div class="make-me-sticky">
+                  <SidebarRight/>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</article>
           </main>
         </div>
     )
