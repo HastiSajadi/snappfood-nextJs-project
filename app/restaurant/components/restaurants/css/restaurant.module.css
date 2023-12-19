@@ -61,8 +61,11 @@
     max-width: 100%;
 }
 
-@media (max-width:426px){
+@media (max-width:1023px){
     .restCard{
-        min-width: 80%;
+        min-width: 100%;
+    }
+    .restsMain{
+        padding: 1rem;
     }
 }

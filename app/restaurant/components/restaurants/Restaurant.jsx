@@ -14,7 +14,7 @@ export const  Restaurants =() => {
 
     return(
 
-      <div className={clsx("d-flex flex-wrap justify-content-between", style.restsMain)}>
+      <div className={clsx("d-flex flex-wrap justify-content-end", style.restsMain)}>
           {
             restaurant.map(({id,img,icon,title,rate})=>{
                 return(
@@ -33,7 +33,7 @@ export const  Restaurants =() => {
                           <FontAwesomeIcon className="text-warning me-1" icon={faStar} />
                           </span>
                         </div>
-                      <p className="text-secondary">category</p>
+                      <p className="text-secondary">فست فود</p>
                       <div className={clsx("d-flex",style.deliveryContainer)}>
                       ۱۰.۰۰۰
                         <p className="m-0 mx-2 "> ارسال اکسپرس</p>

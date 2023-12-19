@@ -15,3 +15,12 @@ main.main {
     font-family: IRANSansMobile;
     font-weight: bold;
 }
+
+
+
+/* @media (max-width:1023px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse!important;
+    }
+} */

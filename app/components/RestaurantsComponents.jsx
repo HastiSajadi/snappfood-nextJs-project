@@ -33,7 +33,7 @@ export const  RestaurantsComponents =() => {
                           <FontAwesomeIcon className="text-warning me-1" icon={faStar} />
                           </span>
                         </div>
-                      <p className="text-secondary">category</p>
+                      <p className="text-secondary">فست فود</p>
                       <div className={clsx("d-flex",style.deliveryContainer)}>
                       ۱۰.۰۰۰
                         <p className="m-0 mx-2 "> ارسال اکسپرس</p>

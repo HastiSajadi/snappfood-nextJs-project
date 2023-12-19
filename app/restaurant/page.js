@@ -8,6 +8,9 @@ import style from "./page.module.css"
 import clsx from "clsx"
 import "../globals.css"
 import { Restaurants } from "./components/restaurants/Restaurant"
+import Sidebar from "./components/sidebar/Sidebar"
+import PriceClass from "./components/price class/PriceClass"
+import Options from "./components/options/Options"
 
 
 export const metadata = {
@@ -34,13 +37,16 @@ export default function Restaurant(){
             </BreadCrums>
             <Sort/>
 
-            <div className="container-fluid p-0 mt-5">
-                <div className="row">
-                    <div className="col-lg-9 col-12 p-0">
-                        <Restaurants/>
+            <div className={clsx("container-fluid p-0 mt-5" , style.container)}>
+                <div className="row flex-row-reverse">
+                    
+                    <div className="col-lg-3  col-md-5 col-12 p-0">
+                        <Sidebar/>
+                        <PriceClass/>
+                        <Options/>
                     </div>
-                    <div className="col-lg-3 col-12 p-0">
-                        
+                    <div className="col-lg-9 col-md-7 col-12 p-0">
+                        <Restaurants/>
                     </div>
                 </div>
             </div>
