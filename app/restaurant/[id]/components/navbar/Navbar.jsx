@@ -1,0 +1,60 @@
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faLocationDot ,faMagnifyingGlass,faChevronDown,faStore} from "@fortawesome/free-solid-svg-icons"
+import {faFileLines,faUser} from "@fortawesome/free-regular-svg-icons"
+import style from "./css/navbar.module.css"
+import clsx from "clsx"
+import MediaQuery from 'react-responsive'
+
+
+
+
+export default function Navbar(){
+    return(
+        <header className={style.container}>
+
+            {/* //desktop features */}
+            <MediaQuery minWidth={1024}>
+            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center">
+                <a className={clsx("btn p-2 link-dark",style.order)}> سفارش ها </a>
+                <FontAwesomeIcon icon={faFileLines} style={{color: "#121212",}} className="ms-1 fs-6" />
+            </div>
+            <FontAwesomeIcon icon={faUser} className="ms-5 fs-6" />
+            </div>
+            <form className={clsx(style.inputContainer)}>
+                <input type="search" className={clsx( style.searchInput)} placeholder="جست و جو در اسنپ فود" aria-label="Search" aria-describedby="search-addon" />
+                <button type="button" className={clsx("btn")} data-mdb-ripple-init>
+                <FontAwesomeIcon className={clsx(style.icons, style.elementGray )} icon={faMagnifyingGlass} />
+                </button>
+            </form>
+            </MediaQuery>
+            {/* //end of desktop features    */}
+
+            {/* //mobile features */}
+            <MediaQuery maxWidth={1023}> 
+                <div>
+                    <FontAwesomeIcon icon={faFileLines} style={{color: "#121212",}} className=" fs-6" />
+                    <FontAwesomeIcon icon={faUser} className="mx-5 fs-6" />
+                    <FontAwesomeIcon className={clsx(style.icons, style.elementGray )} icon={faMagnifyingGlass} />
+                </div>
+            </MediaQuery>       
+            {/* //end of mobile features     */}
+                
+            <div className={clsx("d-flex align-items-center")}>
+                <div className={clsx("ms-5 me-2 text-end" , style.lineHeight)}>
+                    <h5 className={clsx("m-0 fw-bold")}>آدرس انتخابی</h5>
+                    <div className="d-flex align-items-center">
+                    <FontAwesomeIcon className={clsx(style.icons,style.elementGray,style.iconTiny, style.colorPink,"mx-2 ")} icon={faChevronDown} />
+                    <p className={clsx("m-0 ",style.textTiny , style.elementGray)}>... استان، شهر، منطقه، خیابان، پلاک</p>
+                    
+                    </div>
+                </div>
+                <FontAwesomeIcon className={clsx(style.icons , style.elementGray ,"me-4")} icon={faLocationDot} />
+                <div>
+                    <img className={clsx(style.logoImg)} src="https://i.ibb.co/FhQJQDd/snappfood-logo.png"/>
+                </div>
+            </div>
+        </header>
+    )
+}
