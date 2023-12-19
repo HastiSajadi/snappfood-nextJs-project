@@ -1,13 +1,14 @@
 "use client"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Burger,Pizza , HotDog, Steak,Appetizer,Drinks} from "./index";
+
 import "../../globals.css"
 import BreadCrums from "../BreadCrums"
 import clsx from "clsx"
 import Navbar from './components/navbar/Navbar';
 import style from "./page.module.css"
 import SidebarRight from './components/sidebars/SidebarRight';
+import Content from './components/content/Content';
 
 export default   function Menu(){
    
@@ -39,16 +40,25 @@ export default   function Menu(){
               <div class="sidebar-item">
                 <div class="make-me-sticky">
                   <h3>Item 1</h3>
+                  {/*  {
+//             restaurant.map(({id, img, rate})=>{
+//                 const array = [id]
+
+//                 const found = array.find((id)=> id === 2)
+
+//                 console.log(found);
+               
+//             })
+//           } */}
                 </div>
               </div>
             </div>
-            <div class="col-5">
-
+            <div class="col-6">
                 <div class="content-section">
-                    <h2>Content Section</h2>
+                    <Content/>
                 </div>
             </div>
-            <div class="col-4 d-flex flex-column align-items-end">
+            <div class="col-3 d-flex flex-column align-items-end">
               <div class="sidebar-item">
                 <div class="make-me-sticky">
                   <SidebarRight/>

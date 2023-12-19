@@ -33,14 +33,5 @@
 //            </div>
 
           
-//          {/*  {
-//             restaurant.map(({id, img, rate})=>{
-//                 const array = [id]
-
-//                 const found = array.find((id)=> id === 2)
-
-//                 console.log(found);
-               
-//             })
-//           } */}
+//          
 //           </main>
