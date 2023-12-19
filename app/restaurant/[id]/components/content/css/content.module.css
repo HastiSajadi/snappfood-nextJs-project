@@ -29,6 +29,7 @@
     width: 100px;
     height: 100px;
     border-radius: 10px;
+    margin-bottom: 1rem;
 }
 .foodDes{
     font-size: .8rem;
@@ -42,8 +43,24 @@
     color: var( --sf-accent-main);
     box-shadow: var(--sf-shadows-high);
     transition: all .5s;
+    
 }
 .foodBtn:hover{
     background-color: var(--sf-accent-main);
     color: #fff;
+}
+
+@media (max-width:1023px){
+    .container{
+        max-height: fit-content;
+    }
+    .foodCart{
+        width: 100%;
+    }
+}
+
+@media (min-width:767px) and (max-width:1023px){
+    .container{
+        max-height: 80vh;
+    }
 }

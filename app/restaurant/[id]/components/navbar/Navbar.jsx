@@ -35,14 +35,14 @@ export default function Navbar(){
             <MediaQuery maxWidth={1023}> 
                 <div>
                     <FontAwesomeIcon icon={faFileLines} style={{color: "#121212",}} className=" fs-6" />
-                    <FontAwesomeIcon icon={faUser} className="mx-5 fs-6" />
+                    <FontAwesomeIcon icon={faUser} className="mx-3 fs-6" />
                     <FontAwesomeIcon className={clsx(style.icons, style.elementGray )} icon={faMagnifyingGlass} />
                 </div>
             </MediaQuery>       
             {/* //end of mobile features     */}
                 
             <div className={clsx("d-flex align-items-center")}>
-                <div className={clsx("ms-5 me-2 text-end" , style.lineHeight)}>
+                <div className={clsx("ms-md-5 me-2 text-end" , style.lineHeight)}>
                     <h5 className={clsx("m-0 fw-bold")}>آدرس انتخابی</h5>
                     <div className="d-flex align-items-center">
                     <FontAwesomeIcon className={clsx(style.icons,style.elementGray,style.iconTiny, style.colorPink,"mx-2 ")} icon={faChevronDown} />
@@ -50,7 +50,7 @@ export default function Navbar(){
                     
                     </div>
                 </div>
-                <FontAwesomeIcon className={clsx(style.icons , style.elementGray ,"me-4")} icon={faLocationDot} />
+                <FontAwesomeIcon className={clsx(style.icons , style.elementGray ,"me-0 me-md-4")} icon={faLocationDot} />
                 <div>
                     <img className={clsx(style.logoImg)} src="https://i.ibb.co/FhQJQDd/snappfood-logo.png"/>
                 </div>

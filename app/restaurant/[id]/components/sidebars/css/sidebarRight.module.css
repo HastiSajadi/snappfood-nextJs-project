@@ -70,3 +70,15 @@
     font-weight: bolder!important;
     border-left: 0.125rem solid rgb(58, 61, 66)!important;
 }
+
+@media (max-width:1023){
+    .container{
+        width: 100%;
+    }
+    .foodList{
+        overflow: visible;
+        max-height: auto;
+        text-align: end!important;
+    }
+}
+

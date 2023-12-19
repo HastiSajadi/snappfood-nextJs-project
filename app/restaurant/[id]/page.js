@@ -35,10 +35,10 @@ export default   function Menu(){
           <article>
     <div class="container-fluid mt-5">
         
-        <div class="row text-center">
-        <div class="col-3">
+        <div className={clsx("row text-center", style.main)}>
+        <div class="col-lg-3 d-none d-lg-flex col-12">
               <div class="sidebar-item">
-                <div class="make-me-sticky">
+                <div className={clsx("make-me-sticky" , style.sidebarPosition)} >
                   <h3>Item 1</h3>
                   {/*  {
 //             restaurant.map(({id, img, rate})=>{
@@ -53,14 +53,14 @@ export default   function Menu(){
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div className="col-md-6  col-12">
                 <div class="content-section">
                     <Content/>
                 </div>
             </div>
-            <div class="col-3 d-flex flex-column align-items-end">
-              <div class="sidebar-item">
-                <div class="make-me-sticky">
+            <div className="col-md-6 col-lg-3 col-12 d-flex flex-column align-items-end">
+              <div className={clsx("sidebar-item" , style.sidebarItem)}>
+                <div className={clsx("make-me-sticky" , style.sidebarPosition)} >
                   <SidebarRight/>
                 </div>
               </div>
