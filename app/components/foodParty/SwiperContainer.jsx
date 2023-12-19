@@ -1,3 +1,4 @@
+'use client'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../../node_modules/swiper/swiper.css';
 import Foodparty from "../../../api/foodParty/foodParty.json"
@@ -10,14 +11,17 @@ import { Navigation, A11y } from 'swiper/modules';
 import '../../../node_modules/swiper/modules/navigation.css';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart } from '@/redux/cartSlice';
+import Link from 'next/link';
 
 export default function SwiperContainer(){
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
+  const dispatch = useDispatch();
+  const cartItems = useSelector( state => state.cart.cart)
     return (
       <Swiper
       breakpoints={{
@@ -51,6 +55,7 @@ export default function SwiperContainer(){
             Foodparty.map(({id , title ,des , img , restaurant , deliveryPrice , price , deal , rate , count})=>{
                 return(
                     <SwiperSlide >
+                    <Link href="/checkout">   <h1>cart{cartItems.length} </h1> </Link>
                     <div key={id} onClick={handleShow} className={clsx("bg-white  text-dark rounded-4 d-flex flex-column  p-5 align-items-center " , style.cards)}>
                     <p className={clsx("m-0" , style.cardInfo)}>{restaurant}</p>
                     <p className={clsx("m-0" , style.cardInfo)}>پیک فروشنده {deliveryPrice}</p>
@@ -113,7 +118,10 @@ export default function SwiperContainer(){
                           </div>
                           <div className='w-100 border border-2 border-secondary-subtle mt-3'></div>
                           <div className='d-flex w-100 my-3 justify-content-between'>
-                          <button type='submit' className={style.modalSubmitBtn} >افزودن</button>
+                          <button type='submit' className={style.modalSubmitBtn}  onClick={() => dispatch(addToCart({title,price}))}>افزودن {cartItems.length}</button>
+
+
+                          
                           <div>
                             <div className="d-flex mt-2 align-items-center">
                               <div className='d-flex flex-column'>
