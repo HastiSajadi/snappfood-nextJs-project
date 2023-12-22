@@ -4,6 +4,7 @@ import './globals.css'
 import Header from './components/header/Header'
 import { usePathname } from 'next/navigation';
 import Footer from './components/footer/Footer';
+import { ReduxProvider } from '@/redux/provider';
 
 
 
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
       <body>
         {pathname === "/"  && <Header/>}
         {pathname === "/restaurant" && <Header/>}
-        {children}
+        <ReduxProvider>{children} </ReduxProvider> 
         <Footer/>
         </body>
     </html>
