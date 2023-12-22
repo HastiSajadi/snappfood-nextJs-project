@@ -2,7 +2,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../../node_modules/swiper/swiper.css';
 import Foodparty from "../../../api/foodParty/foodParty.json"
-
 import clsx from "clsx"
 import style from "./css/foodparty.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -10,7 +9,6 @@ import {faStar,faClock,faChevronLeft} from "@fortawesome/free-solid-svg-icons"
 import { Navigation, A11y } from 'swiper/modules';
 import '../../../node_modules/swiper/modules/navigation.css';
 import { useEffect, useState } from 'react';
-
 import { addToCart } from '@/redux/cartSlice';
 import Link from 'next/link';
 import axios from 'axios';
@@ -60,7 +58,7 @@ export default function SwiperContainer(){
                 return(
                     <SwiperSlide >
 
-                      {modalState.show && <FoodpartyModal setModalState={setModalState} itemId={modalState.itemId} />}
+                      {/* {modalState.show && <FoodpartyModal setModalState={setModalState} itemId={modalState.itemId} />} */}
                     <div
                     key={id} 
                     onClick={()=>{setModalState((state)=>({...state , show:true , itemId:id}))}} 

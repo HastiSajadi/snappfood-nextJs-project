@@ -3,7 +3,7 @@
     font-family: IRANSansMobile!important;
     flex-direction: column;
     padding: 1rem;
-    margin-top: 11rem;
+    margin-top: 10rem!important;
 }
 
 .title{
@@ -19,7 +19,7 @@
 }
 
 .foodCart{
-    width: 45%;
+    width: 30%;
     height: 100px;
     overflow: hidden;
     margin: 1rem 0;
@@ -45,20 +45,20 @@
     text-decoration: none;
     color: #000;
     cursor: pointer;
-    padding:.3rem .7rem;
-    font-size: 1rem;
+    padding:.3rem .3rem;
+    font-size: .7rem;
     border-top-left-radius: 10px;
 }
 .foodTitleIcon{
     color: var(--sf-accent-main);
-    font-size: .8rem;
+    font-size: .7rem;
 }
 .foodTitle a{
     margin-right: 6px;
     transition: all .5s;
 }
 .foodTitle:hover a{
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 
@@ -82,15 +82,18 @@
 }
 @media(min-width:1024px){
     .foodCart{
-        width: 23%;
-        height: 150px;
+        width: 16%;
+        height: 100px;
     }
     .foodTitle{
+        display: flex;
+        align-items: center;
         padding:.3rem .7rem;
-        font-size: 1.2rem;
+        font-size: .9rem;
         border-top-left-radius: 20px;
     }
     .foodTitleIcon{
-        font-size: 1rem;
+        font-size: .9rem;
+        margin-right: .4rem;
     }
 }
