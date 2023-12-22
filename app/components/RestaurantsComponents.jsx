@@ -25,15 +25,15 @@ export const  RestaurantsComponents =() => {
                       </div>
                       <div className="d-flex flex-column align-items-center">
                         <img className={clsx(style.restLogoImg)} src={icon} />
-                        <h3 className={style.restName}>{title}</h3>
+                        <h5 className={style.restName}>{title}</h5>
 
                         <div>
-                        <span className="mb-2 fw-bold">
+                        <span className="my-3 fw-bold">
                           {rate}
                           <FontAwesomeIcon className="text-warning me-1" icon={faStar} />
                           </span>
                         </div>
-                      <p className="text-secondary">فست فود</p>
+                      <p className={clsx(style.category)}>فست فود</p>
                       <div className={clsx("d-flex",style.deliveryContainer)}>
                       ۱۰.۰۰۰
                         <p className="m-0 mx-2 "> ارسال اکسپرس</p>

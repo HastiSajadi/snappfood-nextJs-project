@@ -57,7 +57,10 @@
     direction: rtl;
     max-width: 100%;
 }
-
+.category{
+    color: rgb(174, 174, 174);
+    font-size: .7rem;
+}
 @media (max-width:426px){
     .restCard{
         min-width: 80%;
