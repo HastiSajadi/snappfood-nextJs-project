@@ -10,7 +10,7 @@ export default function Options(){
         <div className={style.container}>
             <ul className="list-unstyled">
             <div className={style.itemsContainer}>
-                <div className={style.iconContainer}>
+                <div className={style.iconContainerActive}>
                     <FontAwesomeIcon className={style.icon} icon={faCircle} />
                 </div>
                 <li>دارای کوپن</li>
