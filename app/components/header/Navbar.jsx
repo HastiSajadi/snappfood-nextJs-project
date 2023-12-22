@@ -1,11 +1,9 @@
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faUser ,faMagnifyingGlass,faLocationCrosshairs,faChevronDown,faStore} from "@fortawesome/free-solid-svg-icons"
+import {faLocationDot ,faMagnifyingGlass,faChevronDown,faStore} from "@fortawesome/free-solid-svg-icons"
+import {faFileLines,faUser} from "@fortawesome/free-regular-svg-icons"
 import style from "./css/navbar.module.css"
 import clsx from "clsx"
 import MediaQuery from 'react-responsive'
-import LoginModalDesktop from "../loginModal/LoginModalDesktop";
-import LoginModalMobile from "../loginModal/LoginModalMobile";
 
 
 
@@ -15,12 +13,12 @@ export default function Navbar(){
 
             {/* //desktop features */}
             <MediaQuery minWidth={1024}>
-            <div>
-                <LoginModalDesktop/>
-                <a className={clsx("btn p-2 link-dark")}>
-                        ثبت نام فروشندگان
-                        <FontAwesomeIcon className={clsx(style.icons ,"ms-2")} icon={faStore} />
-                </a>
+            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center">
+                <a className={clsx("btn p-2",style.order)}> سفارش ها </a>
+                <FontAwesomeIcon icon={faFileLines} style={{color: "#121212",}} className="ms-1 fs-6" />
+            </div>
+            <FontAwesomeIcon icon={faUser} className="ms-5 fs-6" />
             </div>
             <form className={clsx(style.inputContainer)}>
                 <input type="search" className={clsx( style.searchInput)} placeholder="جست و جو در اسنپ فود" aria-label="Search" aria-describedby="search-addon" />
@@ -34,22 +32,23 @@ export default function Navbar(){
             {/* //mobile features */}
             <MediaQuery maxWidth={1023}> 
                 <div>
-                    <LoginModalMobile/>
-                    <FontAwesomeIcon className={clsx(style.icons, style.elementGray , "ms-4")} icon={faMagnifyingGlass} />
+                    <FontAwesomeIcon icon={faFileLines} style={{color: "#121212",}} className=" fs-6" />
+                    <FontAwesomeIcon icon={faUser} className="mx-3 fs-6" />
+                    <FontAwesomeIcon className={clsx(style.icons, style.elementGray )} icon={faMagnifyingGlass} />
                 </div>
             </MediaQuery>       
             {/* //end of mobile features     */}
                 
             <div className={clsx("d-flex align-items-center")}>
-                <div className={clsx("mx-3 text-end" , style.lineHeight)}>
-                    <h5 className={clsx("m-0 fw-bold h6")}>آدرس انتخابی</h5>
+                <div className={clsx("ms-md-5 me-2 text-end" , style.lineHeight)}>
+                    <h5 className={clsx("m-0 fw-bold")}>آدرس انتخابی</h5>
                     <div className="d-flex align-items-center">
-                    <FontAwesomeIcon className={clsx(style.icons,style.elementGray,style.iconTiny, style.colorPink,"mx-4 ")} icon={faChevronDown} />
-                    <p className={clsx("m-0 ",style.textTiny , style.elementGray)}> ...تهران، کشاورز، پارک لاله، </p>
+                    <FontAwesomeIcon className={clsx(style.icons,style.elementGray,style.iconTiny, style.colorPink,"mx-2 ")} icon={faChevronDown} />
+                    <p className={clsx("m-0 ",style.textTiny , style.elementGray)}>... استان، شهر، منطقه، خیابان، پلاک</p>
                     
                     </div>
                 </div>
-                <FontAwesomeIcon className={clsx(style.icons , style.elementGray)} icon={faLocationCrosshairs} />
+                <FontAwesomeIcon className={clsx(style.icons , style.elementGray ,"me-0 me-md-4")} icon={faLocationDot} />
                 <div>
                     <img className={clsx(style.logoImg)} src="https://i.ibb.co/FhQJQDd/snappfood-logo.png"/>
                 </div>

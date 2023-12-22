@@ -10,7 +10,7 @@ export const  FoodCategory =()=>{
         <>
         <div className={clsx("d-flex  align-items-end container-fluid" , style.container)}>
             <h5 className={clsx(style.title)}>دسته بندی ها</h5>
-            <div className={clsx(style.foodContainer , "mt-lg-5 flex-row-reverse ")}>
+            <div className={clsx(style.foodContainer , "mt-lg-3 flex-row-reverse ")}>
                 {
                     Api.map(({id,title,img})=>{
                         return(

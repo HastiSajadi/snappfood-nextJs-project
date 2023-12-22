@@ -2,17 +2,16 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../../node_modules/swiper/swiper.css';
 import Foodparty from "../../../api/foodParty/foodParty.json"
-import Api2 from "../../../api/foodParty/usersComment.json"
 import clsx from "clsx"
 import style from "./css/foodparty.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faStar,faClock,faChevronLeft} from "@fortawesome/free-solid-svg-icons"
 import { Navigation, A11y } from 'swiper/modules';
 import '../../../node_modules/swiper/modules/navigation.css';
-import { useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
+import { useEffect, useState } from 'react';
 import { addToCart } from '@/redux/cartSlice';
 import Link from 'next/link';
+<<<<<<< HEAD
 import { useDispatch } from 'react-redux';
 
 export default function SwiperContainer(){
@@ -21,6 +20,21 @@ export default function SwiperContainer(){
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const dispath = useDispatch();
+=======
+import axios from 'axios';
+import FoodpartyModal from '../Modals/FoodpartyModal';
+
+export default function SwiperContainer(){
+
+
+  const [data , setData] = useState(null)
+  const [modalState , setModalState] = useState({
+    show : true,
+    itemId : 0
+  })
+
+ 
+>>>>>>> refs/remotes/origin/master
     return (
       <Swiper
       breakpoints={{
@@ -51,6 +65,7 @@ export default function SwiperContainer(){
         onSwiper={(swiper) => console.log(swiper)}
       >
         {
+<<<<<<< HEAD
             Foodparty.map(({id , title ,des , img , restaurant , deliveryPrice , price , deal , rate , count})=>{
 
               const handleAddToCart=(product) => {
@@ -58,10 +73,18 @@ export default function SwiperContainer(){
                 dispath(addToCart(product))
 
               }
+=======
+            Foodparty.map(({id , title  , img , restaurant , deliveryPrice , price , deal , rate , count})=>{
+>>>>>>> refs/remotes/origin/master
                 return(
                     <SwiperSlide >
-                    
-                    <div key={id} onClick={handleShow} className={clsx("bg-white  text-dark rounded-4 d-flex flex-column  p-5 align-items-center " , style.cards)}>
+
+                      {/* {modalState.show && <FoodpartyModal setModalState={setModalState} itemId={modalState.itemId} />} */}
+                    <div
+                    key={id} 
+                    onClick={()=>{setModalState((state)=>({...state , show:true , itemId:id}))}} 
+                    className={clsx("bg-white  text-dark rounded-4 d-flex flex-column  p-5 align-items-center " , style.cards)}>
+
                     <p className={clsx("m-0" , style.cardInfo)}>{restaurant}</p>
                     <p className={clsx("m-0" , style.cardInfo)}>پیک فروشنده {deliveryPrice}</p>
                     <img className="w-75 rounded my-3" alt="food" src={img} />
@@ -90,6 +113,7 @@ export default function SwiperContainer(){
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
 
 
                 <Modal size="lg" show={show} onHide={handleClose}>
@@ -179,6 +203,8 @@ export default function SwiperContainer(){
                     </div>
                   </Modal.Body>
                 </Modal>
+=======
+>>>>>>> refs/remotes/origin/master
                 </SwiperSlide>
                 )
             })

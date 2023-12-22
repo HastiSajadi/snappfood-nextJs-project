@@ -2,12 +2,13 @@
 
 
 .container{
-    padding: .5rem 1rem;
+    padding: 0rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: IRANSansMobile!important;
     background: var(--sf-surface-light);
+    box-shadow: var(--sf-shadows-small);
 }
 .icons{
     width: 1rem;
@@ -24,11 +25,14 @@
 .lineHeight{
     line-height: var(--sf-lineHeight-default);
 }
+.lineHeight h5{
+   font-size: .8rem;
+}
 .colorPink{
     color: var(--sf-accent-main);
 }
 .logoImg{
-    width: 80px;
+    width: 70px;
     margin-left: 1rem;
 }
 .inputContainer{
@@ -50,10 +54,19 @@
 .searchInput::placeholder{
     color: var(--sf-inactive-dark);
 }
+
+.order{
+    font-size: .8rem!important;
+    font-weight: bold!important;
+}
+
 /* end of Navbar style */
 
 @media (max-width:760px){
     .logoImg{
         display: none;
+    }
+    .container{
+        padding: .8rem 1rem;
     }
 }
