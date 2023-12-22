@@ -13,12 +13,14 @@ import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { addToCart } from '@/redux/cartSlice';
 import Link from 'next/link';
+import { useDispatch } from 'react-redux';
 
 export default function SwiperContainer(){
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const dispath = useDispatch();
     return (
       <Swiper
       breakpoints={{
@@ -50,6 +52,12 @@ export default function SwiperContainer(){
       >
         {
             Foodparty.map(({id , title ,des , img , restaurant , deliveryPrice , price , deal , rate , count})=>{
+
+              const handleAddToCart=(product) => {
+
+                dispath(addToCart(product))
+
+              }
                 return(
                     <SwiperSlide >
                     
@@ -115,7 +123,7 @@ export default function SwiperContainer(){
                           </div>
                           <div className='w-100 border border-2 border-secondary-subtle mt-3'></div>
                           <div className='d-flex w-100 my-3 justify-content-between'>
-                          <button type='submit' className={style.modalSubmitBtn} >افزودن </button>
+                          <button type='submit' className={style.modalSubmitBtn} onClick={() => handleAddToCart(product)} >افزودن </button>
 
 
                           
