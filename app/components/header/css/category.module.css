@@ -9,8 +9,11 @@
 }
 
 .categoryItemsImg{
-    width: 50px;
+    width: 35px;
     height: auto;
+}
+.categoryItemTitle{
+    font-size: .7rem;
 }
 
 @media (max-width:768px){
