@@ -34,9 +34,9 @@
 }
 .iconContainerActive{
     width: 40px;
-    background-color:var(--sf-inactive-main);
+    background-color:var(--sf-accent2-light);
     border-radius: 50px;
-    color: var(--sf-accent2-light);
+    color: var(--sf-inactive-main);
     justify-content: flex-start;
     display: flex;
     align-items: center;
