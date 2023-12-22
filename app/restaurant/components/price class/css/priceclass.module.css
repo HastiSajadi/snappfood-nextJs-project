@@ -15,26 +15,18 @@
     font-size: .7rem;
     color: var(--sf-carbon-light);
 }
-
-.priceItems{
-    width: 100%;
-    background-color: rgba(58, 61, 66, 0.06);
-    padding: .6rem;
+.listContainer{
+    background-color: rgba(222, 222, 222, 0.722);
     border-radius: 10px;
-    display: flex;
-    justify-content: left;
-    flex-direction: row-reverse;
     align-items: center;
-    position: relative;
+}
+.listItem{
+    cursor: pointer;
+}
+.listItemActive{
+    background-color: #fff;
+    padding: .2rem .5rem;
+    border-radius: 8px;
+    color: var(--sf-accent2-main);
 }
 
-.selectItem{
-    width: 20%;
-    padding: .4rem;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 10px;
-    color: var(--sf-accent2-main)!important;
-    position: absolute;
-    right: 1px;
-}

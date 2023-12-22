@@ -1,3 +1,4 @@
+import clsx from "clsx"
 import style from "./css/priceclass.module.css"
 
 export default function PriceClass(){
@@ -6,20 +7,13 @@ export default function PriceClass(){
         <div className={style.main}>
             <div className="w-100">
                 <p className={style.priceTitle}> کلاس قیمتی </p>
-            <div className={style.priceItems}>
-                <div className={style.selectItem}>
-                <span  >همه</span>
-                </div> 
-                <div>
-                <span className="ms-4">اقتصادی</span>    
-                </div> 
-                <div>
-                <span className="ms-4">متوسط</span>
-                </div>
-                <div>
-                <span className="ms-4">گران</span>
-                </div>
-            </div>
+
+                <ul className={clsx("list-unstyled d-flex justify-content-around p-2 ", style.listContainer)}>
+                    <li className={style.listItem}>گران</li>
+                    <li className={style.listItem}>متوسط</li>
+                    <li className={style.listItem}>اقتصادی</li>
+                    <li className={style.listItemActive}>همه</li>
+                </ul>
             </div>
         </div>
         </>
