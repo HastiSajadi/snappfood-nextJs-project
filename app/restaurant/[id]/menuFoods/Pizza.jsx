@@ -1,7 +1,12 @@
+'use client'
 import style from "../components/content/css/content.module.css"
 import { useEffect, useState } from 'react';
 import axios from "axios"
 import FoodModalPizza from "../components/foodModal/FoodModalPizza"
+
+import style from "../components/content/css/content.module.css"
+import { useDispatch } from "react-redux"
+import { addToCart } from "@/redux/cartSlice"
 
 export const Pizza =() => {
 
@@ -18,6 +23,8 @@ export const Pizza =() => {
     }
     getData()
   },[])
+const dispatch = useDispatch();
+
 
     return(
         <div className="mb-5">
@@ -37,7 +44,7 @@ export const Pizza =() => {
                             </div>
                         </div>
                         <div className="d-flex w-100 justify-content-between align-items-center">
-                            <button className={style.foodBtn}>افزودن</button>
+                            <button className={style.foodBtn} onClick={() => dispatch(addToCart({price,name,id}))}>افزودن</button>
                             <h6 className="fw-bold fs-6">
                                 {price}
                             </h6>
