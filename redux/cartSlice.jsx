@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 
 const initialState = {
-   cart: localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [] ,
+   cart:localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [] ,
    cartTotalQuantity:0,
    cartTotalAmount:0
 }
