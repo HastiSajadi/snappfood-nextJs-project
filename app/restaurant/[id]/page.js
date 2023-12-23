@@ -40,7 +40,7 @@ const cartItems = useSelector(state => state.cart.cart)
         <div class="col-lg-3 d-none d-lg-flex col-12">
               <div class="sidebar-item">
                 <div className={clsx("make-me-sticky" , style.sidebarPosition)} >
-                  <h3> <Order /> </h3>
+                <Order /> 
                   {/*  {
 //             restaurant.map(({id, img, rate})=>{
 //                 const array = [id]

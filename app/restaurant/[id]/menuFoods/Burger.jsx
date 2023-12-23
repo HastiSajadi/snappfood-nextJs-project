@@ -1,5 +1,6 @@
 import { selectedBurger } from "../randomFoods"
 import style from "../components/content/css/content.module.css"
+import { Order } from "../components/content/addToOreder/Order"
 
 
 export const Burger =() => {
@@ -21,7 +22,11 @@ export const Burger =() => {
                             </div>
                         </div>
                         <div className="d-flex w-100 justify-content-between align-items-center">
-                            <button className={style.foodBtn}>افزودن</button>
+                        <Order
+                           name={name}
+                           price={price}
+                           id={id}
+                            />
                             <h6 className="fw-bold fs-6">
                                 {price}
                             </h6>
