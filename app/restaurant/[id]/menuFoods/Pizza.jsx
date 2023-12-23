@@ -1,19 +1,34 @@
-import { selectedPizzas } from "../randomFoods"
 import style from "../components/content/css/content.module.css"
-
+import { useEffect, useState } from 'react';
+import axios from "axios"
+import FoodModalPizza from "../components/foodModal/FoodModalPizza"
 
 export const Pizza =() => {
 
+    const [data , setData] = useState(null)
+  const [modalState , setModalState] = useState({
+    show : false,
+    itemId : 0,
+  })
+  useEffect(()=>{
+    const getData = async ()=>{
+        let data = await axios.get("http://localhost:3002/pizzas");
+        console.log(data.data)
+        setData(data.data)
+    }
+    getData()
+  },[])
 
     return(
         <div className="mb-5">
             <h6 id="pizza" className={style.title}>پیتزا</h6>
             <div className="d-flex flex-wrap justify-content-center w-100 ">
             {
-               selectedPizzas.map(({id,img,name,rate,des,price})=>{
+               data?.map(({id,img,name,rate,des,price})=>{
                return(
-                
-                    <div key={id} className={style.foodCart}>
+              <>
+              {modalState.show &&  <FoodModalPizza itemId={modalState.itemId} show={modalState.show} setModalState={setModalState} />}
+               <div key={id} onClick={()=>{setModalState((state)=>({...state , show:true , itemId:id}))}}  className={style.foodCart}>
                         <div className="d-flex">
                             <img className={style.foodImg} src={img} />
                             <div className="d-flex text-end flex-column">
@@ -28,7 +43,7 @@ export const Pizza =() => {
                             </h6>
                         </div>
                     </div>
-                
+                    </>
                 )})
             }
             </div>
