@@ -1,7 +1,6 @@
 'use client'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../../node_modules/swiper/swiper.css';
-import Foodparty from "../../../api/foodParty/foodParty.json"
 import clsx from "clsx"
 import style from "./css/foodparty.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -9,9 +8,9 @@ import {faStar,faClock,faChevronLeft} from "@fortawesome/free-solid-svg-icons"
 import { Navigation, A11y } from 'swiper/modules';
 import '../../../node_modules/swiper/modules/navigation.css';
 import { useEffect, useState } from 'react';
-import { addToCart } from '@/redux/cartSlice';
-import Link from 'next/link';
 import { useDispatch } from 'react-redux';
+import FoodpartyModal from "../Modals/FoodpartyModal"
+import axios from "axios"
 
 
 
@@ -20,11 +19,20 @@ export default function SwiperContainer(){
 
   const [data , setData] = useState(null)
   const [modalState , setModalState] = useState({
-    show : true,
-    itemId : 0
+    show : false,
+    itemId : 0,
   })
 
- const dispath = useDispatch();
+//  const dispath = useDispatch();
+ useEffect(()=>{
+  const getData = async ()=>{
+      let data = await axios.get("http://localhost:3001/foodparty");
+      console.log(data.data)
+      setData(data.data)
+  }
+  getData()
+},[])
+ 
 
     return (
       <Swiper
@@ -56,11 +64,11 @@ export default function SwiperContainer(){
         onSwiper={(swiper) => console.log(swiper)}
       >
         {
-          Foodparty.map(({id , title  , img , restaurant , deliveryPrice , price , deal , rate , count})=>{
+          data?.map(({id , title  , img , restaurant , deliveryPrice , price , deal , rate , count})=>{
             return(
+             <>
               <SwiperSlide >
-
-                {/* {modalState.show && <FoodpartyModal setModalState={setModalState} itemId={modalState.itemId} />} */}
+                {modalState.show &&  <FoodpartyModal itemId={modalState.itemId} show={modalState.show} setModalState={setModalState} />}
               <div
               key={id} 
               onClick={()=>{setModalState((state)=>({...state , show:true , itemId:id}))}} 
@@ -95,6 +103,7 @@ export default function SwiperContainer(){
               </div>
           </div>
           </SwiperSlide>
+          </>
           )
           })
         }
