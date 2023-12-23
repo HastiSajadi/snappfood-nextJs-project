@@ -3,8 +3,6 @@ import style from "../components/content/css/content.module.css"
 import { useEffect, useState } from 'react';
 import axios from "axios"
 import FoodModalPizza from "../components/foodModal/FoodModalPizza"
-
-import style from "../components/content/css/content.module.css"
 import { useDispatch } from "react-redux"
 import { addToCart } from "@/redux/cartSlice"
 
