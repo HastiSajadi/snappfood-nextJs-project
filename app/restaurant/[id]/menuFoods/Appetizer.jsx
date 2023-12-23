@@ -29,8 +29,8 @@ export const Appetizer =() => {
             return(
            <>
            {modalState.show &&  <FoodModalAppetizer itemId={modalState.itemId} show={modalState.show} setModalState={setModalState} />}
-            <div key={id} onClick={()=>{setModalState((state)=>({...state , show:true , itemId:id}))}}  className={style.foodCart}>
-                     <div className="d-flex">
+            <div key={id} className={style.foodCart}>
+                     <div onClick={()=>{setModalState((state)=>({...state , show:true , itemId:id}))}}  className="d-flex">
                          <img className={style.foodImg} src={img} />
                          <div className="d-flex text-end flex-column">
                            <h6 className="fw-bold">{name}</h6>
