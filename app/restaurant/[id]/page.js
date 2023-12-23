@@ -9,7 +9,8 @@ import Navbar from './components/navbar/Navbar';
 import style from "./page.module.css"
 import SidebarRight from './components/sidebars/SidebarRight';
 import Content from './components/content/Content';
-
+import { useSelector } from 'react-redux';
+import Order from '@/app/order/page';
 export default   function Menu(){
    
     const breadcrum = [
@@ -17,7 +18,7 @@ export default   function Menu(){
         {id:1, name: "رستوران ها"},
         {id:1, name: "فست فود"}
     ]
-
+const cartItems = useSelector(state => state.cart.cart)
     return(
         <div>
           <Navbar/>
@@ -39,7 +40,7 @@ export default   function Menu(){
         <div class="col-lg-3 d-none d-lg-flex col-12">
               <div class="sidebar-item">
                 <div className={clsx("make-me-sticky" , style.sidebarPosition)} >
-                  <h3>Item 1</h3>
+                  <h3> <Order /> </h3>
                   {/*  {
 //             restaurant.map(({id, img, rate})=>{
 //                 const array = [id]
@@ -49,7 +50,7 @@ export default   function Menu(){
 //                 console.log(found);
                
 //             })
-//           } */}
+//           } */} 
                 </div>
               </div>
             </div>
