@@ -1,9 +1,11 @@
+'use client'
 import { selectedPizzas } from "../randomFoods"
 import style from "../components/content/css/content.module.css"
-
-
+import { useDispatch } from "react-redux"
+import { addToCart } from "@/redux/cartSlice"
 export const Pizza =() => {
 
+const dispatch = useDispatch();
 
     return(
         <div className="mb-5">
@@ -22,7 +24,7 @@ export const Pizza =() => {
                             </div>
                         </div>
                         <div className="d-flex w-100 justify-content-between align-items-center">
-                            <button className={style.foodBtn}>افزودن</button>
+                            <button className={style.foodBtn} onClick={() => dispatch(addToCart({price,name,id}))}>افزودن</button>
                             <h6 className="fw-bold fs-6">
                                 {price}
                             </h6>
