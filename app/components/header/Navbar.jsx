@@ -4,6 +4,8 @@ import {faFileLines,faUser} from "@fortawesome/free-regular-svg-icons"
 import style from "./css/navbar.module.css"
 import clsx from "clsx"
 import MediaQuery from 'react-responsive'
+import Order from "@/app/order/page";
+import Link from "next/link";
 
 
 
@@ -14,10 +16,12 @@ export default function Navbar(){
             {/* //desktop features */}
             <MediaQuery minWidth={1024}>
             <div className="d-flex align-items-center">
-            <div className="d-flex align-items-center">
+            <Link href='/order'>
+            <div className="d-flex align-items-center" >
                 <a className={clsx("btn p-2",style.order)}> سفارش ها </a>
                 <FontAwesomeIcon icon={faFileLines} style={{color: "#121212",}} className="ms-1 fs-6" />
             </div>
+            </Link>
             <FontAwesomeIcon icon={faUser} className="ms-5 fs-6" />
             </div>
             <form className={clsx(style.inputContainer)}>
