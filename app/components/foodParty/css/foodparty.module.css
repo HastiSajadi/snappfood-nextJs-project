@@ -35,6 +35,7 @@
     width: 80%!important;
     font-family: IRANSansMobile!important;
     height: 90%!important;
+    cursor: pointer;
 }
 .cardFoodTitle{
     font-weight: bold!important;
