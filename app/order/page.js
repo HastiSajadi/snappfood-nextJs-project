@@ -1,14 +1,30 @@
 'use client'
 
-import { removeFromCart } from "@/redux/cartSlice";
+import { addToCart, clearCart, decreaseCart, getTotals, removeFromCart } from "@/redux/cartSlice";
 import { useSelector, useDispatch } from "react-redux"
-
+import { useEffect } from "react";
 
 export default function Order () {
 
     const cartItems = useSelector(state => state.cart.cart)
     const dispatch = useDispatch();
 
+    useEffect(()=>{
+        dispatch(getTotals());
+    }, [cartItems, dispatch])
+
+    const handleRmoveFromCart = (cartItem) => {
+        dispatch(removeFromCart(cartItem))
+    }
+    const handleDecreaseCart = (cartItem) => {
+        dispatch(decreaseCart(cartItem));
+    }
+    const handleIncreaseQuantity = (cartItem) => {
+        dispatch(addToCart(cartItem))
+    }
+    const handleClearCart = (cartItem) => {
+        dispatch(clearCart(cartItem))
+    }
     return(
        /*  <div className="d-flex align-items-center">
                 <a className={clsx("btn p-2",style.order)}> سفارش ها </a>
@@ -30,16 +46,16 @@ export default function Order () {
                                 <div>
                                    <h1> {cartItem.name} </h1>
                                    
-                                   <button>Remove</button>
+                                   <button onClick={() => handleRmoveFromCart(cartItem)}>Remove</button>
                                  </div>
                                 <div>
                                     <h1>
                                         {cartItem.price}
                                     </h1>
                                     <div>
-                                        <button>-</button>
+                                        <button onClick={() => handleDecreaseCart(cartItem) } >-</button>
                                         <div>{cartItem.cartTotalQuantity} </div>
-                                        <button>+</button>
+                                        <button onClick={() => handleIncreaseQuantity(cartItem) }>+</button>
                                         
                                     </div> 
                                     <div>
@@ -51,7 +67,7 @@ export default function Order () {
                         ))
                        }
                                                             <div>
-                                        <button>clear list</button>
+                                        <button onClick={() => handleClearCart(cartItems)}>clear list</button>
                                         <div>
                                             <div>
                                                 <span>
