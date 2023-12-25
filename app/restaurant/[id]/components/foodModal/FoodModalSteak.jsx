@@ -5,7 +5,7 @@ import clsx from "clsx"
 import style from "./css/foodModal.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faStar,faClock,faChevronLeft} from "@fortawesome/free-solid-svg-icons"
-
+import { Order } from "../content/addToOreder/Order"
 
 
 export default function FoodModal({setModalState,show, itemId}){
@@ -39,7 +39,7 @@ export default function FoodModal({setModalState,show, itemId}){
                           <p className='text-end text-black-50'>{data?.des}</p>
                           <div className='w-100 mt-3'></div>
                           <div className='d-flex w-100 my-3 justify-content-between'>
-                          <button type='submit' className={style.modalSubmitBtn} >افزودن </button>
+                          <Order name={data?.name}  price={data?.price} id={itemId}/> 
                           <div>
                             <div className="d-flex mt-2 align-items-center">
                               <div className='d-flex flex-column'>
