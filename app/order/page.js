@@ -15,25 +15,57 @@ export default function Order () {
                 <FontAwesomeIcon icon={faFileLines} style={{color: "#121212",}} className="ms-1 fs-6" />
          </div> */
          <div>
-            <h>Order</h>
-            {cartItems.length}
+            <h1>{cartItems.length}</h1>
             {
-                cartItems.map( item => {
-                    return(
-                        <div id={item.id} >
-                            
-                            <h1>
-                                {item.name}
-                            </h1>
-                            <p>
-                                {item.price}
-                            </p>
-                            <button 
-                            onClick={ () => dispatch(removeFromCart({ id: item.id}))}
-                            > remove</button>
-                        </div>
-                    )
-                })
+                cartItems.length === 0 ? (
+                    <div>
+                        empety
+                    </div>    
+                ) :
+                (
+                    <div>
+                       {
+                        cartItems?.map( cartItem => (
+                            <div key={cartItem.id}>
+                                <div>
+                                   <h1> {cartItem.name} </h1>
+                                   
+                                   <button>Remove</button>
+                                 </div>
+                                <div>
+                                    <h1>
+                                        {cartItem.price}
+                                    </h1>
+                                    <div>
+                                        <button>-</button>
+                                        <div>{cartItem.cartTotalQuantity} </div>
+                                        <button>+</button>
+                                        
+                                    </div> 
+                                    <div>
+                                        <h1>{cartItem.price * cartItem.cartTotalQuantity}</h1>
+                                     </div>   
+
+                                </div>    
+                             </div>   
+                        ))
+                       }
+                                                            <div>
+                                        <button>clear list</button>
+                                        <div>
+                                            <div>
+                                                <span>
+                                                قابل پرداخت
+                                                </span>
+                                                <span>
+                                                   {cartItems.cartTotalAmount}
+                                                </span>
+                                            </div>
+                                        </div>
+                                     </div>
+                          
+                    </div>    
+                )
             }
          </div>
     )
