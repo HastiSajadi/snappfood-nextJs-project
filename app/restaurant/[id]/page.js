@@ -37,20 +37,10 @@ const cartItems = useSelector(state => state.cart.cart)
     <div class="container-fluid mt-5">
         
         <div className={clsx("row text-center", style.main)}>
-        <div class="col-lg-3 d-none d-lg-flex col-12">
-              <div class="sidebar-item">
+        <div class="col-lg-3  d-lg-flex col-12">
+              <div class="sidebar-item w-100">
                 <div className={clsx("make-me-sticky" , style.sidebarPosition)} >
                 <Order /> 
-                  {/*  {
-//             restaurant.map(({id, img, rate})=>{
-//                 const array = [id]
-
-//                 const found = array.find((id)=> id === 2)
-
-//                 console.log(found);
-               
-//             })
-//           } */} 
                 </div>
               </div>
             </div>
