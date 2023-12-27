@@ -11,6 +11,10 @@ export  const  Order = ({ name,price, id}) => {
 
 
     return(
-        <button className={style.foodBtn}  onClick={() => dispatch(addToCart({price,name,id}))}> افزودن  </button>
+        <div>
+                    <button className={style.foodBtn}  onClick={() => dispatch(addToCart({price,name,id}))}> افزودن  </button>
+
+        </div>
     )
+
 }
