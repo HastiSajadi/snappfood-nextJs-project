@@ -1,10 +1,22 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 
+const getStorLocal = (item) => {
+  if (typeof localStorage !== 'undefined') {
+      return localStorage.getItem(item);
+  }
+  return null;
+}
+const setStorLocal = (item, value) => {
+  if (typeof localStorage !== 'undefined') {
+      localStorage.setItem(item, value);
+  }
+}
+
 
 const initialState = {
-   cart:localStorage.getItem("cart")
-     ? JSON.parse(localStorage.getItem("cart"))
+   cart:getStorLocal("cart")
+     ? JSON.parse(getStorLocal("cart"))
      : [],
    cartTotalQuantity: 0,
    cartTotalAmount: 0,
@@ -25,14 +37,14 @@ const initialState = {
          const tempProduct = { ...action.payload, cartTotalQuantity : 1};
          state.cart.push(tempProduct);
       }
-      localStorage.setItem('cart', JSON.stringify(state.cart))
+      setStorLocal('cart', JSON.stringify(state.cart))
      },
 
      removeFromCart(state,action){
      const nextCartItems =  state.cart.filter(cartItem => cartItem.id !== action.payload.id)
      state.cart = nextCartItems;
 
-     localStorage.setItem('cart', JSON.stringify(state.cart))
+     setStorLocal('cart', JSON.stringify(state.cart))
      },
      decreaseCart(state, action){
       const itemIndex = state.cart.findIndex(
@@ -49,7 +61,7 @@ const initialState = {
      },
      clearCart(state, action){
       state.cart = [];
-      localStorage.setItem('cart', JSON.stringify(state.cart))
+      setStorLocal('cart', JSON.stringify(state.cart))
 
      },
      getTotals(state, action){
