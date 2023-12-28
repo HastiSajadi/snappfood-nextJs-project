@@ -16,7 +16,7 @@ export default function Navbar(){
             {/* //desktop features */}
             <MediaQuery minWidth={1024}>
             <div className="d-flex align-items-center">
-            <Link href='/order'>
+            <Link className="text-decoration-none text-dark" href='/order'>
             <div className="d-flex align-items-center" >
                 <a className={clsx("btn p-2",style.order)}> سفارش ها </a>
                 <FontAwesomeIcon icon={faFileLines} style={{color: "#121212",}} className="ms-1 fs-6" />

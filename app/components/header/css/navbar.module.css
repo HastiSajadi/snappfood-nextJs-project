@@ -58,6 +58,7 @@
 .order{
     font-size: .8rem!important;
     font-weight: bold!important;
+    text-decoration: none!important;
 }
 
 /* end of Navbar style */

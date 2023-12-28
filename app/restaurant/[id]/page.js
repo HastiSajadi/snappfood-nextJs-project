@@ -48,7 +48,7 @@ const cartItems = useSelector(state => state.cart.cart)
     <div className="container-fluid mt-5">
         
         <div className={clsx("row text-center", style.main)}>
-        <div className="col-lg-3  d-lg-flex col-12">
+        <div className="col-lg-3 mt-3 mt-lg-0  d-lg-flex col-12">
               <div className="sidebar-item w-100">
                 <div className={clsx("make-me-sticky" , style.sidebarPosition)} >
                 <Order /> 
