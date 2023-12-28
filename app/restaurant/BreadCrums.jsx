@@ -13,7 +13,7 @@ export default function BreadCrums({children}){
                 children.map((childArray,(child, index)=>{
                     const isLastItem = index === childArray.length-1;
                     return(
-                        <div className="d-flex align-items-center flex-row-reverse">
+                        <div key={index} className="d-flex align-items-center flex-row-reverse">
                             {child}
                             {!isLastItem && <span className="mx-2"><FontAwesomeIcon color="#A6AAAD"  fontSize={12} icon={faChevronLeft}/></span>}
                        </div>

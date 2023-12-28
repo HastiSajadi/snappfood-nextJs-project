@@ -1,5 +1,5 @@
 import style from "../components/content/css/content.module.css"
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import axios from "axios"
 import FoodModalDrink from "../components/foodModal/FoodModalDrink"
 import { Order } from "../components/content/addToOreder/Order"
@@ -24,11 +24,11 @@ export const Drinks =() => {
        <h6  id="drinks" className={style.title}>نوشیدنی</h6>
            <div className="d-flex flex-wrap justify-content-center w-100 ">
            {
-            data?.map(({id,img,name,rate,des,price})=>{
+            data?.map(({id,img,name,des,price})=>{
             return(
-           <>
+           <Fragment key={id} >
            {modalState.show &&  <FoodModalDrink itemId={modalState.itemId} show={modalState.show} setModalState={setModalState} />}
-            <div key={id}   className={style.foodCart}>
+            <div   className={style.foodCart}>
                      <div onClick={()=>{setModalState((state)=>({...state , show:true , itemId:id}))}} className="d-flex">
                          <img className={style.foodImg} src={img} />
                          <div className="d-flex text-end flex-column">
@@ -43,7 +43,7 @@ export const Drinks =() => {
                          </h6>
                      </div>
                  </div>
-                 </>
+                 </Fragment>
              )})
            }
            </div>

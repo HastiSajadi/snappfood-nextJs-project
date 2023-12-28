@@ -1,5 +1,5 @@
 import style from "../components/content/css/content.module.css"
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import axios from "axios"
 import FoodModalPizza from "../components/foodModal/FoodModalPizza"
 import { Order } from "../components/content/addToOreder/Order"
@@ -27,9 +27,9 @@ export const Pizza =() => {
             {
             data?.map(({id,img,name,rate,des,price})=>{
             return(
-           <>
+           <Fragment key={id} >
            {modalState.show &&  <FoodModalPizza itemId={modalState.itemId} show={modalState.show} setModalState={setModalState} />}
-            <div key={id}  className={style.foodCart}>
+            <div  className={style.foodCart}>
                      <div className="d-flex" onClick={()=>{setModalState((state)=>({...state , show:true , itemId:id}))}} >
                          <img className={style.foodImg} src={img} />
                          <div className="d-flex text-end flex-column">
@@ -44,7 +44,7 @@ export const Pizza =() => {
                          </h6>
                      </div>
                  </div>
-                 </>
+                 </Fragment>
              )})
            }
             </div>
