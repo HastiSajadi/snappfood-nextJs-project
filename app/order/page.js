@@ -7,8 +7,9 @@ import style from "./css/order.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faBagShopping,faTrashCan,faMinus,faPlus} from "@fortawesome/free-solid-svg-icons"
 import clsx from "clsx";
+import dynamic from "next/dynamic"
 
-export default function Order () {
+const Order= ()=>{
 
     const cartItems = useSelector(state => state.cart.cart)
     const dispatch = useDispatch();
@@ -84,7 +85,7 @@ export default function Order () {
                              </div>   
                         ))
                        }
-                    {/* <div>           
+                    <div>           
                         <div>
                             <div>
                                 <span>
@@ -95,10 +96,11 @@ export default function Order () {
                                 </span>
                             </div>
                         </div>
-                        </div>       */}
+                        </div>      
                     </div>    
                 )
             }
          </div>
     )
 }
+export default dynamic(()=> Promise.resolve(Order),{ssr : false})

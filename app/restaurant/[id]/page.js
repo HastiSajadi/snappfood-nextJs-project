@@ -1,7 +1,7 @@
 "use client"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import dynamic from "next/dynamic"
 import "../../globals.css"
 import BreadCrums from "../BreadCrums"
 import clsx from "clsx"
@@ -11,7 +11,9 @@ import SidebarRight from './components/sidebars/SidebarRight';
 import Content from './components/content/Content';
 import { useSelector } from 'react-redux';
 import Order from '@/app/order/page';
-export default   function Menu(){
+
+
+const Menu= ()=>{
    
     const breadcrum = [
         {id:0, name: "اسنپ فود"},
@@ -64,3 +66,4 @@ const cartItems = useSelector(state => state.cart.cart)
     )
 
 }   
+export default dynamic(()=> Promise.resolve(Menu),{ssr : false})
