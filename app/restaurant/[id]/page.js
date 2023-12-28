@@ -7,14 +7,23 @@ import BreadCrums from "../BreadCrums"
 import clsx from "clsx"
 import Navbar from './components/navbar/Navbar';
 import style from "./page.module.css"
-import SidebarRight from './components/sidebars/SidebarRight';
+
 import Content from './components/content/Content';
 import { useSelector } from 'react-redux';
 import Order from '@/app/order/page';
+import axios from "axios"
+import { useEffect, useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faStar,faCircleInfo} from "@fortawesome/free-solid-svg-icons"
+import SidebarRight from './components/sidebars/SidebarRight';
 
 
-const Menu= ()=>{
-   
+
+const Menu= ({params})=>{
+  const id = params.id;
+ 
+ 
+  
     const breadcrum = [
         {id:0, name: "اسنپ فود"},
         {id:1, name: "رستوران ها"},
@@ -54,7 +63,7 @@ const cartItems = useSelector(state => state.cart.cart)
             <div className="col-md-6 col-lg-3 col-12 d-flex flex-column align-items-end">
               <div className={clsx("sidebar-item" , style.sidebarItem)}>
                 <div className={clsx("make-me-sticky" , style.sidebarPosition)} >
-                  <SidebarRight/>
+                  <SidebarRight id={id}/>
                 </div>
               </div>
             </div>

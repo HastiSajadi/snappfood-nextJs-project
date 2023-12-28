@@ -2,11 +2,22 @@ import style from "./css/sidebarRight.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faStar,faCircleInfo} from "@fortawesome/free-solid-svg-icons"
 import clsx from "clsx";
-
-export default function SidebarRight(){
+import {useEffect, useState } from 'react';
+import axios from "axios"
+export default function SidebarRight({id}){
+    
+    const [data , setData] = useState(null)
+   useEffect(()=>{
+    const getData = async ()=>{
+        let data = await axios.get("http://localhost:3003/restaurants/" + id);
+        console.log(data.data)
+        setData(data.data)
+    }
+    getData()
+  },[])
     return(
         <>
-        <div className={style.container}>
+          <div className={style.container}>
             {/* kole section bala */}
             <div className="d-flex"> 
                 {/* neveshteha */}
@@ -15,7 +26,7 @@ export default function SidebarRight(){
                     <div className={clsx("d-flex" , style.restInfo)}>
                         <p className="m-0 fw-bold">
                         <span className="text-secondary me-2">(۴۰۴ امتیاز)</span>
-                        ۴.۶
+                        {data?.rate}
                         <FontAwesomeIcon className="text-warning ms-1" icon={faStar} />
                         </p>
                     </div>
@@ -24,12 +35,12 @@ export default function SidebarRight(){
                     </div>
                 </div>
                 <div>
-                    <h5 className={style.restName}>رستوران پروفسور</h5>
+                    <h5 className={style.restName}>{data?.title}</h5>
                 </div>
                 </div>
                 {/* akse rest */}
                 <div>
-                    <img className={clsx(style.restImgLogo, "ms-2")} src='https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/60f410f93511f.jpeg' />
+                    <img className={clsx(style.restImgLogo, "ms-2")} src={data?.icon} />
                 </div>
                 
             </div>
