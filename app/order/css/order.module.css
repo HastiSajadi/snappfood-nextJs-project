@@ -34,7 +34,7 @@
     padding: 0;
     color: red;
 }
-.price span{
+.price {
     font-size: .8rem;
 }
 .quantityBtn{
@@ -50,4 +50,24 @@
 }
 .icon{
     font-size: .8rem;
+}
+
+.cartItemName{
+    font-size: .9rem;
+}
+
+.submitBtn{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: .8rem;
+    background-color: var(--sf-accent-main);
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    transition: all .5s;
+    cursor: pointer;
+}
+.submitBtn:hover{
+    background-color: var(--sf-accent-light);
 }

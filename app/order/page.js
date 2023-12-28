@@ -65,9 +65,7 @@ const Order= ()=>{
                         cart.cartItems.map( cartItem => (
                             <div key={cartItem.id} className="w-100 mt-3 d-flex flex-column align-items-end">
                                 <div>
-                                   <p className={clsx("mb-0 fw-bold")}> {cartItem.name} </p>
-                                   
-                                   {/* <button onClick={() => handleRmoveFromCart(cartItem)}>Remove</button> */}
+                                   <p className={clsx("mb-0 fw-bold" , style.cartItemName)}> {cartItem.name} </p>
                                  </div>
                                 <div className="d-flex flex-row-reverse justify-content-between w-100 border-bottom mb-1">
                                     <div className={clsx("d-flex flex-row-reverse align-items-center",style.price)}>
@@ -88,18 +86,22 @@ const Order= ()=>{
                              </div>   
                         ))
                        }
-                    <div>           
-                        <div>
-                            <div>
-                                <span>
-                                قابل پرداخت
-                                </span>
-                                <span>
-                                    {cart.cartTotalAmount}
-                                </span>
-                            </div>
-                        </div>
-                        </div>      
+                       <div className="d-flex flex-row-reverse justify-content-between align-items-center py-3">
+                        <span className={clsx(style.cartItemName , "fw-bold")}>
+                        قابل پرداخت
+                        </span>
+                       <div className={clsx(style.price,"fw-bold d-flex flex-row-reverse align-items-center")}>
+                       <span >
+                            {cart.cartTotalAmount}
+                        </span>
+                        <span className="fw-lighter me-1" >تومان</span>
+                       </div>
+                       </div>
+
+                       <textarea className="w-100 rounded p-4 border-secondary-subtle text-secondary mt-1 text-end" value={"...توضیحات سفارش"}/>
+                       <button type="submite" className={style.submitBtn}>ثبت سفارش</button>
+                       
+                          
                     </div>    
                 )
             }
