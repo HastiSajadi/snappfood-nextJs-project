@@ -1,5 +1,4 @@
-import Link from "next/link"
-import restaurant from "../../api/restaurants/restaurants.json"
+
 import BreadCrums from "./BreadCrums"
 import Sort from "./components/Sort/Sort"
 import 'bootstrap/dist/css/bootstrap.min.css';

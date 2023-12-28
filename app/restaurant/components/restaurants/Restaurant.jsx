@@ -1,25 +1,37 @@
 
-import restaurant from "../../../../api/restaurants/restaurants.json"
+'use client'
 import clsx from "clsx"
 import style from "./css/restaurant.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faChevronLeft,faStar} from "@fortawesome/free-solid-svg-icons"
+import {faStar} from "@fortawesome/free-solid-svg-icons"
 import Link from "next/link"
-
-
+import {useEffect, useState } from 'react';
+import axios from "axios"
 
 export const  Restaurants =() => {
 
-
+  const [data , setData] = useState(null)
+  const [restState , setRestState] = useState({
+    show : false,
+    itemId : 0,
+  })
+  useEffect(()=>{
+    const getData = async ()=>{
+        let data = await axios.get("http://localhost:3003/restaurants");
+        console.log(data.data)
+        setData(data.data)
+    }
+    getData()
+  },[])
 
     return(
 
       <div className={clsx("d-flex flex-wrap justify-content-end", style.restsMain)}>
           {
-            restaurant.map(({id,img,icon,title,rate})=>{
+            data?.map(({id,img,icon,title,rate})=>{
                 return(
                     <div key={id} className={clsx(style.restCard , "m-2 ")}>
-                      <Link className="text-decoration-none text-dark"  href={`restaurant/${id}`} >
+                      <Link onClick={()=>{setRestState((state)=>({...state ,itemId:id}))}}  className="text-decoration-none text-dark"  href={`restaurant/${id}`} >
                       <div className={clsx(style.restBackgroundContainer)}>
                         <img className={style.restBackground} src={img} />
                       </div>

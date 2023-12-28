@@ -1,22 +1,31 @@
-
-import restaurant from "../../api/restaurants/restaurants.json"
+'use client'
 import clsx from "clsx"
 import style from "./restaurantsCard.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faChevronLeft,faStar} from "@fortawesome/free-solid-svg-icons"
+import {faStar} from "@fortawesome/free-solid-svg-icons"
 import Link from "next/link"
-
+import {useEffect, useState } from 'react';
+import axios from "axios"
 
 
 export const  RestaurantsComponents =() => {
-
+  const [data , setData] = useState(null)
+  
+  useEffect(()=>{
+    const getData = async ()=>{
+        let data = await axios.get("http://localhost:3003/restaurants");
+        console.log(data.data)
+        setData(data.data)
+    }
+    getData()
+  },[])
 
 
     return(
 
       <div className={clsx("d-flex overflow-x-scroll p-2 mt-3", style.restsMain)}>
           {
-            restaurant.map(({id,img,icon,title,rate})=>{
+            data?.map(({id,img,icon,title,rate})=>{
                 return(
                     <div key={id} className={clsx(style.restCard , "m-2 ")}>
                       <Link className="text-decoration-none text-dark"  href={`restaurant/${id}`} >

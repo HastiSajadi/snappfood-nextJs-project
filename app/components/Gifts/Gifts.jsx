@@ -5,7 +5,7 @@ import {faChevronLeft,faStar} from "@fortawesome/free-solid-svg-icons"
 import {RestaurantsComponents} from "../RestaurantsComponents.jsx"
 import Link from "next/link"
 
-// import Something from "./restaurantCarousel"
+
 
 export const  Gifts = () =>{
 

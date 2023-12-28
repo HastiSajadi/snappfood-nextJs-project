@@ -2,10 +2,9 @@ import clsx from "clsx"
 import style from "../restaurantsCard.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faChevronLeft,faStar} from "@fortawesome/free-solid-svg-icons"
-import restaurant from "../../../api/restaurants/restaurants.json"
 import Link from "next/link"
 import { RestaurantsComponents } from "../RestaurantsComponents"
-// import Something from "./restaurantCarousel"
+
 
 export const  NewsInSnapp = () =>{
 
