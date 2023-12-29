@@ -28,14 +28,14 @@ const Order= ()=>{
         dispatch(getTotals());
       }, [cart, dispatch]);
 
-      const handleAddToCart = (product) => {
-        dispatch(addToCart(product));
+      const handleAddToCart = (cartItem) => {
+        dispatch(addToCart(cartItem));
       };
-      const handleDecreaseCart = (product) => {
-        dispatch(decreaseCart(product));
+      const handleDecreaseCart = (cartItem) => {
+        dispatch(decreaseCart(cartItem));
       };
-      const handleRemoveFromCart = (product) => {
-        dispatch(removeFromCart(product));
+      const handleRemoveFromCart = (cartItem) => {
+        dispatch(removeFromCart(cartItem));
       };
       const handleClearCart = () => {
         dispatch(clearCart());
