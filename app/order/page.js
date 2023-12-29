@@ -58,7 +58,7 @@ const Order= ()=>{
                     <div className="w-100">
                          <div className={clsx("d-flex flex-row-reverse w-100 justify-content-between",style.cartQuantity)}>
                          <p className="mb-0"><span>({cartTotalQuantity})</span>سبد خرید</p>
-                         <button onClick={() => handleClearCart(cartItems)}><FontAwesomeIcon icon={faTrashCan} /></button>
+                         <button onClick={() => handleClearCart()}><FontAwesomeIcon icon={faTrashCan} /></button>
                          </div>
                        {
                         cart.cartItems &&
@@ -98,7 +98,7 @@ const Order= ()=>{
                        </div>
                        </div>
 
-                       <textarea className="w-100 rounded p-4 border-secondary-subtle text-secondary mt-1 text-end" value={"...توضیحات سفارش"}/>
+                       <textarea className="w-100  h-100 rounded p-3 border-secondary-subtle text-secondary mt-1 text-end " style={{minHeight : '100px'}}  placeholder="...توضیحات سفارش" /> 
                        <button type="submite" className={style.submitBtn}>ثبت سفارش</button>
                        
                           
