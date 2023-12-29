@@ -36,7 +36,9 @@ export default function Navbar(){
             {/* //mobile features */}
             <MediaQuery maxWidth={1023}> 
                 <div>
+                <Link className="text-decoration-none text-dark" href='/order'>
                     <FontAwesomeIcon icon={faFileLines} style={{color: "#121212",}} className=" fs-6" />
+                    </Link>
                     <FontAwesomeIcon icon={faUser} className="mx-3 fs-6" />
                     <FontAwesomeIcon className={clsx(style.icons, style.elementGray )} icon={faMagnifyingGlass} />
                 </div>

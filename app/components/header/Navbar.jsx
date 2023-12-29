@@ -4,7 +4,6 @@ import {faFileLines,faUser} from "@fortawesome/free-regular-svg-icons"
 import style from "./css/navbar.module.css"
 import clsx from "clsx"
 import MediaQuery from 'react-responsive'
-import Order from "@/app/order/page";
 import Link from "next/link";
 
 
@@ -36,7 +35,9 @@ export default function Navbar(){
             {/* //mobile features */}
             <MediaQuery maxWidth={1023}> 
                 <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{color: "#121212",}} className=" fs-6" />
+                <Link className="text-decoration-none" href='/order'>
+                 <FontAwesomeIcon icon={faFileLines} style={{color: "#121212",}} className=" fs-6" />
+               </Link>
                     <FontAwesomeIcon icon={faUser} className="mx-3 fs-6" />
                     <FontAwesomeIcon className={clsx(style.icons, style.elementGray )} icon={faMagnifyingGlass} />
                 </div>
