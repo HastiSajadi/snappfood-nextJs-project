@@ -16,12 +16,13 @@ import { useEffect, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faStar,faCircleInfo} from "@fortawesome/free-solid-svg-icons"
 import SidebarRight from './components/sidebars/SidebarRight';
+import { useParams } from 'next/navigation';
 
 
 
-const Menu= ({params})=>{
-  const id = params.id;
+const Menu= ()=>{
  
+  const {id} = useParams()
  
   
     const breadcrum = [
