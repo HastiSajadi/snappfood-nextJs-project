@@ -13,7 +13,7 @@ export default function FoodModal({setModalState,show, itemId}){
     const [data , setData] = useState(null)
     useEffect(()=>{
         const getData = async ()=>{
-            let data = await axios.get("http://localhost:3002/salads_fries/"+itemId);
+            let data = await axios.get("https://snappfood-api.onrender.com/salads_fries/"+itemId);
             console.log(data.data)
             setData(data.data)
         }

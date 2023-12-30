@@ -14,7 +14,7 @@ export const Steak =() => {
     })
     useEffect(()=>{
       const getData = async ()=>{
-          let data = await axios.get("http://localhost:3002/steaks");
+          let data = await axios.get("https://snappfood-api.onrender.com/steaks");
           console.log(data.data)
           setData(data.data)
       }

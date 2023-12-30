@@ -12,7 +12,7 @@ export const HotDog =() => {
     })
     useEffect(()=>{
       const getData = async ()=>{
-          let data = await axios.get("http://localhost:3002/hotdog");
+          let data = await axios.get("https://snappfood-api.onrender.com/hotdog");
           console.log(data.data)
           setData(data.data)
       }

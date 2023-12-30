@@ -9,7 +9,7 @@ export default function SidebarRight({id}){
     const [data , setData] = useState(null)
    useEffect(()=>{
     const getData = async ()=>{
-        let data = await axios.get("http://localhost:3003/restaurants/" + id);
+        let data = await axios.get("https://snappfood-api.onrender.com/restaurants/" + id);
         console.log(data.data)
         setData(data.data)
     }

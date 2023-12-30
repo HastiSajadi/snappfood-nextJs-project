@@ -13,7 +13,7 @@ export const  RestaurantsComponents =() => {
   
   useEffect(()=>{
     const getData = async ()=>{
-        let data = await axios.get("http://localhost:3003/restaurants");
+        let data = await axios.get("https://snappfood-api.onrender.com/restaurants");
         console.log(data.data)
         setData(data.data)
     }
