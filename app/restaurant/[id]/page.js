@@ -7,16 +7,11 @@ import BreadCrums from "../BreadCrums"
 import clsx from "clsx"
 import Navbar from './components/navbar/Navbar';
 import style from "./page.module.css"
-
 import Content from './components/content/Content';
 import { useSelector } from 'react-redux';
-import Order from '@/app/order/page';
-import axios from "axios"
-import { useEffect, useState } from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faStar,faCircleInfo} from "@fortawesome/free-solid-svg-icons"
 import SidebarRight from './components/sidebars/SidebarRight';
 import { useParams } from 'next/navigation';
+import Order from '@/app/order/Order';
 
 
 
@@ -52,7 +47,7 @@ const cartItems = useSelector(state => state.cart.cart)
         <div className="col-lg-3 mt-3 mt-lg-0  d-lg-flex col-12">
               <div className="sidebar-item w-100">
                 <div className={clsx("make-me-sticky" , style.sidebarPosition)} >
-                <Order /> 
+                <Order/>
                 </div>
               </div>
             </div>
