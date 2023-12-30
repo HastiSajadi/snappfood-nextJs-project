@@ -6,6 +6,7 @@ import style from "./css/foodModal.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faStar,faClock,faChevronLeft} from "@fortawesome/free-solid-svg-icons"
 import Api2 from "../../../api/foodParty/usersComment.json"
+import { Order } from "@/app/restaurant/[id]/components/content/addToOreder/Order";
 
 
 export default function FoodpartyModal({setModalState,show, itemId}){
@@ -52,7 +53,7 @@ export default function FoodpartyModal({setModalState,show, itemId}){
                           </div>
                           <div className='w-100 border border-2 border-secondary-subtle mt-3'></div>
                           <div className='d-flex w-100 my-3 justify-content-between'>
-                          <button type='submit' className={style.modalSubmitBtn} >افزودن </button>
+                            <Order />
                           <div>
                             <div className="d-flex mt-2 align-items-center">
                               <div className='d-flex flex-column'>
