@@ -12,6 +12,7 @@ import { useSelector } from 'react-redux';
 import SidebarRight from './components/sidebars/SidebarRight';
 import { useParams } from 'next/navigation';
 import Order from '@/app/order/Order';
+import { Suspense } from 'react';
 
 
 
@@ -27,7 +28,8 @@ const Menu= ()=>{
     ]
 const cartItems = useSelector(state => state.cart.cart)
     return(
-        <div>
+       <Suspense fallback={<h1>Loading ...</h1>}>
+         <div>
           <Navbar/>
 
           <main className={style.main} >
@@ -68,6 +70,7 @@ const cartItems = useSelector(state => state.cart.cart)
 </article>
           </main>
         </div>
+       </Suspense>
     )
 
 }   
