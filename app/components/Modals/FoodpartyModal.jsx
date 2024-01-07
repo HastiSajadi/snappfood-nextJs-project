@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faStar,faClock,faChevronLeft} from "@fortawesome/free-solid-svg-icons"
 import Api2 from "../../../api/foodParty/usersComment.json"
 import { Order } from "@/app/restaurant/[id]/components/content/addToOreder/Order";
+import Link from "next/link";
 
 
 export default function FoodpartyModal({setModalState,show, itemId}){
@@ -65,7 +66,7 @@ export default function FoodpartyModal({setModalState,show, itemId}){
                           </div>
                           </div>
                           <div className='d-flex justify-content-between mt-4'>
-                            <a className='text-success fw-bold text-decoration-none'> <FontAwesomeIcon className='me-2' icon={faChevronLeft}/>{data?.restaurant} </a>
+                            <Link href={`./restaurant/${data?.id}`} className='text-success fw-bold text-decoration-none'> <FontAwesomeIcon className='me-2' icon={faChevronLeft}/>{data?.restaurant} </Link>
                             <p className='h6'>ارسال اکسپرس</p>
                           </div>
                         </div>
