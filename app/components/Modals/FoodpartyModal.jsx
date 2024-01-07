@@ -15,7 +15,6 @@ export default function FoodpartyModal({setModalState,show, itemId}){
     useEffect(()=>{
         const getData = async ()=>{
             let data = await axios.get("https://snappfood-api.onrender.com/foodparty/"+itemId);
-            console.log(data.data)
             setData(data.data)
         }
         getData()
@@ -54,7 +53,11 @@ export default function FoodpartyModal({setModalState,show, itemId}){
                           </div>
                           <div className='w-100 border border-2 border-secondary-subtle mt-3'></div>
                           <div className='d-flex w-100 my-3 justify-content-between'>
-                            <Order />
+                            <Order 
+                            name ={ data?.title}
+                            id={data?.id}
+                            price={data?.price}
+                            />
                           <div>
                             <div className="d-flex mt-2 align-items-center">
                               <div className='d-flex flex-column'>

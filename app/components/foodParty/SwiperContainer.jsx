@@ -27,7 +27,6 @@ export default function SwiperContainer(){
  useEffect(()=>{
   const getData = async ()=>{
       let data = await axios.get("https://snappfood-api.onrender.com/foodparty");
-      console.log(data.data)
       setData(data.data)
   }
   getData()
@@ -60,8 +59,8 @@ export default function SwiperContainer(){
         modules={[Navigation, A11y]}
         navigation
         spaceBetween={-10}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+       /*  onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)} */
       >
         {
           data?.map(({id , title  , img , restaurant , deliveryPrice , price , deal , rate , count})=>{
