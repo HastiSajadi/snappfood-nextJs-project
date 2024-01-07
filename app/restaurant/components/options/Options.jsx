@@ -4,7 +4,7 @@ import {faCircle} from "@fortawesome/free-solid-svg-icons"
 import clsx from "clsx";
 
 
-export default function Options(){
+export const  Options =() =>{
     return(
         <>
         <div className={style.container}>

@@ -3,7 +3,7 @@ import {faChevronLeft} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 
-export default function BreadCrums({children}){
+export const  BreadCrums = ({children}) =>{
     const back = <FontAwesomeIcon  icon={"arrow-left"}/>
     const childArray = Children.toArray(children)
 

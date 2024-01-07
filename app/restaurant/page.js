@@ -1,14 +1,11 @@
 
-import BreadCrums from "./BreadCrums"
-import Sort from "./components/Sort/Sort"
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from "./page.module.css"
 import clsx from "clsx"
 import "../globals.css"
-import { Restaurants } from "./components/restaurants/Restaurant"
-import Sidebar from "./components/sidebar/Sidebar"
-import PriceClass from "./components/price class/PriceClass"
-import Options from "./components/options/Options"
+import { BreadCrums, Options, PriceClass, Restaurants, Sidebar, Sort } from './components';
+import Link from 'next/link';
 
 
 export const metadata = {
@@ -28,7 +25,7 @@ export default function Restaurant(){
             {
                 breadcrum.map(bread=>
                     <li className={style.breadItem} key={bread.id}>
-                     <p className={clsx("m-0 " , style.breadFontsize)}>{bread.name}</p>
+                    <Link href= './'  className="text-decoration-none text-dark" ><p className={clsx("m-0 " , style.breadFontsize)}>{bread.name}</p></Link>
                     </li>
                 )
             }

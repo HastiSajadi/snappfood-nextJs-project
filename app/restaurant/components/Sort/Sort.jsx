@@ -1,7 +1,7 @@
 import clsx from "clsx"
 import style from "./css/sort.module.css"
 
-export default function Sort(){
+export const  Sort = () =>{
     return(
         <div>
            <select className={clsx("form-select" , style.formSelect)} placeholder="به ترتیب پیش فرض">

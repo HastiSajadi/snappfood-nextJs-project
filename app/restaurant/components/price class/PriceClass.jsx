@@ -1,7 +1,7 @@
 import clsx from "clsx"
 import style from "./css/priceclass.module.css"
 
-export default function PriceClass(){
+export const  PriceClass = () =>{
     return(
         <>
         <div className={style.main}>

@@ -4,7 +4,7 @@ import clsx from "clsx"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faAngleLeft} from "@fortawesome/free-solid-svg-icons"
 
-export default function Sidebar(){
+export const  Sidebar = () =>{
     return(
         <>
         <div className={clsx(style.category)}>
