@@ -56,7 +56,7 @@ export default function Navbar(){
                 </div>
                 <FontAwesomeIcon className={clsx(style.icons , style.elementGray ,"me-0 me-md-4")} icon={faLocationDot} />
                 <div>
-                    <img className={clsx(style.logoImg)} src="https://i.ibb.co/FhQJQDd/snappfood-logo.png"/>
+                    <Link href= '/'><img className={clsx(style.logoImg)} src="https://i.ibb.co/FhQJQDd/snappfood-logo.png"/></Link>
                 </div>
             </div>
         </header>

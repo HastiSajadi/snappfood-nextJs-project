@@ -3,7 +3,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import dynamic from "next/dynamic"
 import "../../globals.css"
-import BreadCrums from "../BreadCrums"
+import {BreadCrums} from "../BreadCrums"
 import clsx from "clsx"
 import Navbar from './components/navbar/Navbar';
 import style from "./page.module.css"
@@ -13,6 +13,7 @@ import SidebarRight from './components/sidebars/SidebarRight';
 import { useParams } from 'next/navigation';
 import Order from '@/app/order/Order';
 import { Suspense } from 'react';
+import Link from 'next/link';
 
 
 
@@ -37,7 +38,7 @@ const cartItems = useSelector(state => state.cart.cart)
             {
               breadcrum.map(bread=>
                 <li className={style.breadItem} key={bread.id}>
-                  <p className={clsx("m-0 " , style.breadFontsize)}>{bread.name}</p>
+               <Link href= './'  className="text-decoration-none text-dark"><p className={clsx("m-0 " , style.breadFontsize)}>{bread.name}</p></Link>
                 </li>
               )
             }
